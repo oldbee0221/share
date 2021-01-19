@@ -42,8 +42,8 @@
 
     <ImageView
         android:id="@+id/iv_share"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/tv_time"
         app:layout_constraintEnd_toEndOf="@+id/iv_videoImage"
         app:layout_constraintTop_toTopOf="@+id/tv_time"
