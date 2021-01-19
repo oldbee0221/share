@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".fragment.Fragment_menu5">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/indigo_button_round">
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_margin="14dp"
+        >
+
+        <LinearLayout
+
+            android:id="@+id/infobutton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/white_button_round"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:src="@drawable/receive_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="21dp"
+                android:paddingBottom="21dp"
+
+                />
+
+            <TextView
+                android:text="대여신청물품"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:textColor="#516492"
+                android:lineSpacingExtra="1sp"
+                android:paddingTop="30dp"
+                android:paddingBottom="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/infobutton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/white_button_round"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:src="@drawable/approval_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="21dp"
+                android:paddingBottom="21dp"
+
+                />
+
+            <TextView
+                android:text="대여승인물품"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:textColor="#516492"
+                android:lineSpacingExtra="1sp"
+                android:paddingTop="30dp"
+                android:paddingBottom="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="14dp"
+        >
+
+        <LinearLayout
+
+            android:id="@+id/infobutton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/white_button_round"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:src="@drawable/setting_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="21dp"
+                android:paddingBottom="21dp"
+
+                />
+
+            <TextView
+                android:text="내물품관리"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:textColor="#516492"
+                android:lineSpacingExtra="1sp"
+                android:paddingTop="30dp"
+                android:paddingBottom="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/infobutton4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/white_button_round"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:src="@drawable/addheart_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="21dp"
+                android:paddingBottom="21dp"
+
+                />
+
+            <TextView
+                android:text="찜한물품"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="#516492"
+                android:lineSpacingExtra=dp
+                android:paddingTop="30dp"
+                android:paddingBottom="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_layout"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/infoline4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:text="관리자에게 문의하기"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+
+                    android:lineSpacingExtra="1sp"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textStyle="normal"
+                    android:textSize="8sp"
+                    android:textColor="#848484"
+                    android:lineSpacingExtra="1sp"
+                    android:text="* 어플 사용법, 대여신청 방법, 용어 등 관련하여 질문하기"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                >
+
+            <ImageButton
+                android:src="@drawable/seemore_"
+                android:background="@color/white"
+                android:layout_marginRight="36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/infoline5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:text="공지사항"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+
+                    android:lineSpacingExtra="1sp"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textStyle="normal"
+                    android:textSize="8sp"
+                    android:textColor="#848484"
+                    android:lineSpacingExtra="1sp"
+                    android:text="* 계정, 이용약관, 권한 허용 등"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                >
+
+                <ImageButton
+                    android:src="@drawable/seemore_"
+                    android:background="@color/white"
+                    android:layout_marginRight="36dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/infoline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:text="설정"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+
+                    android:lineSpacingExtra="1sp"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textStyle="normal"
+                    android:textSize="8sp"
+                    android:textColor="#848484"
+                    android:lineSpacingExtra="1sp"
+                    android:text="* 계정, 이용약관, 권한 허용 등"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                >
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginRight="36dp"
+                    android:src="@drawable/seemore_" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@color/grey" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

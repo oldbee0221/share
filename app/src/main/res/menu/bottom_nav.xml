@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/home2_"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/use_"
+        android:title="사용설명" />
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/myproducts2_"
+        android:title="내대여물품" />
+
+    <item
+        android:id="@+id/navigation_4"
+        android:icon="@drawable/chat_"
+        android:title="채팅" />
+    <item
+        android:id="@+id/navigation_5"
+        android:icon="@drawable/townpage_"
+        android:title="나의정보" />
+
+
+</menu>

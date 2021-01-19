@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Fragment_menu2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="58dp"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="2sp"
+                    android:text="간단한 설명 >"
+                    android:textColor="#516492"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="1"
+                    android:lineSpacingExtra="5sp"
+                    android:text="온동네나눔 물품관리 서비스의 간략한 설명 자세히 보기"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="2sp"
+                    android:text="동영상 설명 >"
+                    android:textColor="#516492"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+
+                    android:id="@+id/infobutton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/white_button_round"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="23dp"
+
+                        android:paddingTop="21dp"
+                        android:paddingRight="23dp"
+                        android:paddingBottom="21dp"
+                        android:src="@drawable/setting_"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="1sp"
+                        android:paddingTop="30dp"
+                        android:paddingBottom="26dp"
+                        android:text="[슬기로운 온동네나눔]\n온동네나눔 기획자가 알려주는"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <TextView
+                            android:text="2020-12-11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:textColor="#828282"
+                            android:lineSpacingExtra="1sp"  />
+
+                        <ImageButton
+                            android:src="@drawable/share3_"
+                            android:background="@color/white"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="70dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/white_button_round"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="23dp"
+                        android:paddingTop="21dp"
+                        android:paddingRight="23dp"
+                        android:paddingBottom="21dp"
+                        android:src="@drawable/addheart_"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="1sp"
+                        android:paddingTop="30dp"
+                        android:paddingBottom="26dp"
+                        android:text="[슬기로운 온동네나눔]\n온동네나눔 기획자가 알려주는"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <TextView
+                            android:text="2020-12-11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:textColor="#828282"
+                            android:lineSpacingExtra="1sp"  />
+
+                        <ImageButton
+                            android:src="@drawable/share3_"
+                            android:background="@color/white"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="70dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
