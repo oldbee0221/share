@@ -172,7 +172,7 @@
                 android:textStyle="normal"
                 android:textSize="15sp"
                 android:textColor="#516492"
-                android:lineSpacingExtra=dp
+                android:lineSpacingExtra="0dp"
                 android:paddingTop="30dp"
                 android:paddingBottom="26dp"
                 android:layout_width="wrap_content"
