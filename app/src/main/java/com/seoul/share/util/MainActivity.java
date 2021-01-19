@@ -118,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             for (int j = 0; j < menu.size(); j++) {
-                if (j == index)
                     menu.getItem(j).setIcon(drawableList.get(j));
             }
         }
