@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
         private void setIconList(int index) {
 
-            drawableList.add(index, selectDrawableList.get(index));
+            drawableList.set(index, selectDrawableList.get(index));
 
             for (int i = 0; i < menu.size(); i++) {
                 if (i != index)
