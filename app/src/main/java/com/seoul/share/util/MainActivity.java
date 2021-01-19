@@ -1,39 +1,37 @@
 package com.seoul.share.util;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.seoul.share.R;
 import com.seoul.share.databinding.ActivityMainBinding;
 import com.seoul.share.fragment.Fragment_menu1;
 import com.seoul.share.fragment.Fragment_menu2;
 import com.seoul.share.fragment.Fragment_menu3;
 import com.seoul.share.fragment.Fragment_menu4;
 import com.seoul.share.fragment.Fragment_menu5;
-import com.seoul.share.R;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    private FragmentManager fragmentManager = getSupportFragmentManager();
-    private Fragment_menu1 fragment_menu1 = new Fragment_menu1();
-    private Fragment_menu2 fragment_menu2 = new Fragment_menu2();
-    private Fragment_menu3 fragment_menu3 = new Fragment_menu3();
-    private Fragment_menu4 fragment_menu4 = new Fragment_menu4();
-    private Fragment_menu5 fragment_menu5 = new Fragment_menu5();
+    private final Fragment_menu1 fragment_menu1 = new Fragment_menu1();
+    private final Fragment_menu2 fragment_menu2 = new Fragment_menu2();
+    private final Fragment_menu3 fragment_menu3 = new Fragment_menu3();
+    private final Fragment_menu4 fragment_menu4 = new Fragment_menu4();
+    private final Fragment_menu5 fragment_menu5 = new Fragment_menu5();
 
 
     Menu menu;
-    ArrayList<Integer> selectDrawableList = new ArrayList<Integer>();
-    ArrayList<Integer> notSelectDrawableList = new ArrayList<Integer>();
-    ArrayList<Integer> drawableList = new ArrayList<Integer>();
+    ArrayList<Integer> selectDrawableList = new ArrayList<>();
+    ArrayList<Integer> notSelectDrawableList = new ArrayList<>();
+    ArrayList<Integer> drawableList = new ArrayList<>();
 
 
     @Override
@@ -71,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     class ItemSelectedListener implements BottomNavigationView.OnNavigationItemSelectedListener {
+        @SuppressLint("NonConstantResourceId")
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             switch (menuItem.getItemId()) {
