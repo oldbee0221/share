@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <item
-        android:id="@+id/navigation_1"
-        android:icon="@drawable/home2_"
-        android:title="홈" />
+        android:id="@+id/fragment_menu1"
+        android:icon="@drawable/main_bottom_navi_home"
+        android:title="홈"
+        app:showAsAction="never"/>
 
     <item
-        android:id="@+id/navigation_2"
-        android:icon="@drawable/use_"
-        android:title="사용설명" />
+        android:id="@+id/fragment_menu2"
+        android:icon="@drawable/main_bottom_navi_use"
+        android:title="사용설명"
+        app:showAsAction="never"/>
 
     <item
-        android:id="@+id/navigation_3"
-        android:icon="@drawable/myproducts2_"
-        android:title="내대여물품" />
+        android:id="@+id/fragment_menu3"
+        android:icon="@drawable/main_buttom_navi_myproducts"
+        android:title="내대여물품"
+        app:showAsAction="never"/>
 
     <item
-        android:id="@+id/navigation_4"
-        android:icon="@drawable/chat_"
-        android:title="채팅" />
+        android:id="@+id/fragment_menu4"
+        android:icon="@drawable/main_bottom_navi_chat"
+        android:title="채팅"
+        app:showAsAction="never"/>
     <item
-        android:id="@+id/navigation_5"
-        android:icon="@drawable/townpage_"
-        android:title="나의정보" />
+        android:id="@+id/fragment_menu5"
+        android:icon="@drawable/main_bottom_navi_townpage"
+        android:title="나의정보"
+        app:showAsAction="never"/>
 
 
 </menu>
