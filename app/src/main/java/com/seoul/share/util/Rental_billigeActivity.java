@@ -5,12 +5,15 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivityRentalBilligeBinding;
 
 public class Rental_billigeActivity extends AppCompatActivity {
 
+    private ActivityRentalBilligeBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rental_billige);
+        binding = ActivityRentalBilligeBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }

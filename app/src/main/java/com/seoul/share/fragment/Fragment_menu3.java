@@ -9,17 +9,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.seoul.share.R;
+import com.seoul.share.databinding.FragmentMenu3Binding;
 
 public class Fragment_menu3 extends Fragment {
 
-    ViewGroup viewGroup;
+    private FragmentMenu3Binding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_menu3,container,false);
-
-        return viewGroup;
+        binding = FragmentMenu3Binding.inflate(inflater,container,false);
+        return binding.getRoot();
     };
 }

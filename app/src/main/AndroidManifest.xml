@@ -14,7 +14,7 @@
         <activity android:name=".util.Rental_billigeActivity" />
         <activity android:name=".util.Rental_itemActivity" />
         <activity android:name=".util.MypagemainActivity" />
-        <activity android:name=".util.RentalmainActivity" />
+        <activity android:name=".util.RentalMainActivity" />
         <activity android:name=".util.SearchmainActivity" />
         <activity android:name=".util.Completed_pwActivity" />
         <activity android:name=".util.FInd_pwActivity" />

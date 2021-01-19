@@ -8,25 +8,20 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivityLoginBinding;
 import com.seoul.share.util.FInd_pwActivity;
 import com.seoul.share.util.MainActivity;
 
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button Login_Button, Login_FIndpw;
+    private ActivityLoginBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-
-
-
-
-        Login_Button = findViewById(R.id.login_button);
-        Login_FIndpw = findViewById(R.id.login_findpw);
+        binding= ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
 
         Button.OnClickListener onClickListener = new Button.OnClickListener() {
@@ -48,8 +43,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
-        Login_Button.setOnClickListener(onClickListener);
-        Login_FIndpw.setOnClickListener(onClickListener);
+        binding.loginButton.setOnClickListener(onClickListener);
+        binding.loginFindpw.setOnClickListener(onClickListener);
     }
 
 }

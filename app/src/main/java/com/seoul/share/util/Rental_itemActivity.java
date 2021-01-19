@@ -5,12 +5,15 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivityRentalItemBinding;
 
 public class Rental_itemActivity extends AppCompatActivity {
 
+    private ActivityRentalItemBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rental_item);
+        binding = ActivityRentalItemBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }

@@ -8,22 +8,17 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivityFindPwBinding;
 
 public class FInd_pwActivity extends AppCompatActivity {
 
 
-    Button Find_pw1,Find_pw2,Find_pw3;
-
+    private ActivityFindPwBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find_pw);
-
-
-        Find_pw1 = findViewById(R.id.find_pw1);
-        Find_pw2 = findViewById(R.id.find_pw2);
-        Find_pw3 = findViewById(R.id.find_pw3);
-
+        binding = ActivityFindPwBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
 
         Button.OnClickListener onClickListener = new Button.OnClickListener() {
@@ -51,9 +46,9 @@ public class FInd_pwActivity extends AppCompatActivity {
             }
         };
 
-        Find_pw1.setOnClickListener(onClickListener);
-        Find_pw2.setOnClickListener(onClickListener);
-        Find_pw3.setOnClickListener(onClickListener);
+        binding.findPw1.setOnClickListener(onClickListener);
+        binding.findPw2.setOnClickListener(onClickListener);
+        binding.findPw3.setOnClickListener(onClickListener);
 
     }
 

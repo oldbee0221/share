@@ -7,13 +7,13 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivitySplashBinding;
 import com.seoul.share.deprecated.LoginActivity;
 import com.seoul.share.lib.Preference;
 
 public class SplashActivity extends AppCompatActivity {
 
     private final int SPLASH_DISPLAY_TIME = 2000;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

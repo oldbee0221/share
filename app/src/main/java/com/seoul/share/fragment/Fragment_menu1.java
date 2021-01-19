@@ -10,16 +10,16 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.FragmentMenu1Binding;
 
 public class Fragment_menu1 extends Fragment {
 
-    ViewGroup viewGroup;
+    private FragmentMenu1Binding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_menu1,container,false);
-
-        return viewGroup;
+        binding = FragmentMenu1Binding.inflate(inflater,container,false);
+        return binding.getRoot();
     };
 }

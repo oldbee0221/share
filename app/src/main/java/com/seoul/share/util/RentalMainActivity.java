@@ -5,15 +5,16 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivityRentalmainBinding;
 import com.seoul.share.databinding.ActivitySearchmainBinding;
 
-public class SearchmainActivity extends AppCompatActivity {
+public class RentalMainActivity extends AppCompatActivity {
 
-    private ActivitySearchmainBinding binding;
+    private ActivityRentalmainBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivitySearchmainBinding.inflate(getLayoutInflater());
+        binding = ActivityRentalmainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
     }
 }

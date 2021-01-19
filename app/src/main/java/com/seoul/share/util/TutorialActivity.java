@@ -19,33 +19,32 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivityTutorialBinding;
 import com.seoul.share.deprecated.LoginActivity;
 import com.seoul.share.lib.Preference;
 
 public class TutorialActivity extends AppCompatActivity {
 
     public static Object Context;
-    private ViewPager viewPager;
     private ViewPagerAdapter pagerAdapter;
     private LinearLayout dotsLayout;
     private TextView[] dots;
     private int[] layouts;
-    private Button btnSkip, btnNext;
 
+    private ActivityTutorialBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        binding = ActivityTutorialBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         if (Build.VERSION.SDK_INT >= 21) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         }
 
-        setContentView(R.layout.activity_tutorial);
 
-        viewPager = findViewById(R.id.view_pager);
-        dotsLayout = findViewById(R.id.layoutDots);
-        btnSkip = findViewById(R.id.btn_skip);
-        btnNext = findViewById(R.id.btn_next);
+
+
 
 // 변화될 레이아웃들 주소
         layouts = new int[]{
@@ -59,23 +58,23 @@ public class TutorialActivity extends AppCompatActivity {
         changeStatusBarColor();
 
         pagerAdapter  = new ViewPagerAdapter(getLayoutInflater());
-        viewPager.setAdapter(pagerAdapter);
-        viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
+        binding.viewPager.setAdapter(pagerAdapter);
+        binding.viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
-        btnSkip.setOnClickListener(new View.OnClickListener() { // 건너띄기 버튼 클릭시 메인화면으로 이동
+        binding.btnSkip.setOnClickListener(new View.OnClickListener() { // 건너띄기 버튼 클릭시 메인화면으로 이동
             @Override
             public void onClick(View v) {
                 moveMainPage();
             }
         });
 
-        btnNext.setOnClickListener(new View.OnClickListener() { // 하나의 버튼을 이용하기 때문에 if else로 두가지 동작을 하게 만듬
+        binding.btnNext.setOnClickListener(new View.OnClickListener() { // 하나의 버튼을 이용하기 때문에 if else로 두가지 동작을 하게 만듬
             @Override
             public void onClick(View v) {
                 int current = getItem(+1);
                 if (current < layouts.length) {
 //                    마지막 페이지가 아니라면 다음 페이지로 이동
-                    viewPager.setCurrentItem(current);
+                    binding.viewPager.setCurrentItem(current);
                 } else {
 //                마지막 페이지라면 메인페이지로 이동
                     moveMainPage();
@@ -103,7 +102,7 @@ public class TutorialActivity extends AppCompatActivity {
     }
 
     private int getItem(int i) {
-        return viewPager.getCurrentItem() + i;
+        return binding.viewPager.getCurrentItem() + i;
     }
 
     private void moveMainPage() {
@@ -121,12 +120,12 @@ public class TutorialActivity extends AppCompatActivity {
 //            다음 / 시작 버튼 바꾸기
             if (position == layouts.length - 1) {
 //                마지막 페이지에서는 다음 버튼을 시작버튼으로 교체
-                btnNext.setText(getString(R.string.start)); // 다음 버튼을 시작버튼으로 글자 교체
-                btnSkip.setVisibility(View.GONE);
+                binding.btnNext.setText(getString(R.string.start)); // 다음 버튼을 시작버튼으로 글자 교체
+                binding.btnSkip.setVisibility(View.GONE);
             } else {
 //                마지막 페이지가 아니라면 다음과 건너띄기 버튼 출력
-                btnNext.setText(getString(R.string.next));
-                btnSkip.setVisibility(View.VISIBLE);
+                binding.btnNext.setText(getString(R.string.next));
+                binding.btnSkip.setVisibility(View.VISIBLE);
             }
         }
 

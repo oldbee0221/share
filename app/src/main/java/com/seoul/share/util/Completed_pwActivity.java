@@ -8,23 +8,17 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivityCompletedPwBinding;
 import com.seoul.share.deprecated.LoginActivity;
 
 public class Completed_pwActivity extends AppCompatActivity {
 
-    Button Completed_button1;
-
-
-
+    private ActivityCompletedPwBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_completed_pw);
-
-
-
-
-        Completed_button1 = findViewById(R.id.completed_button1);
+        binding = ActivityCompletedPwBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
 
         Button.OnClickListener onClickListener = new Button.OnClickListener() {
@@ -43,7 +37,7 @@ public class Completed_pwActivity extends AppCompatActivity {
             }
         };
 
-        Completed_button1.setOnClickListener(onClickListener);
+        binding.completedButton1.setOnClickListener(onClickListener);
 
     }
 

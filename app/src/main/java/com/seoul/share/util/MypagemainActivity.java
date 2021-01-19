@@ -5,12 +5,14 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.databinding.ActivityMypagemainBinding;
 
 public class MypagemainActivity extends AppCompatActivity {
-
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mypagemain);
+        private ActivityMypagemainBinding binding;
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+                super.onCreate(savedInstanceState);
+                binding = ActivityMypagemainBinding.inflate(getLayoutInflater());
+                setContentView(binding.getRoot());
         }
         }
