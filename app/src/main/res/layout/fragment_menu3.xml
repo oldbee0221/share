@@ -37,7 +37,7 @@
             android:lineSpacingExtra="2sp"
             android:text="마을물품"
             android:textColor="#516492"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

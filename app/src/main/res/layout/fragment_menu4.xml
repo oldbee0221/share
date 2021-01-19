@@ -16,7 +16,7 @@
         android:lineSpacingExtra="1sp"
         android:text="채팅"
         android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -17,7 +17,7 @@
         android:lineSpacingExtra="2sp"
         android:text="간단한 설명 >"
         android:textColor="#516492"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view10" />
@@ -32,7 +32,7 @@
         android:layout_weight="1"
         android:text="온동네나눔 물품관리 서비스의 간략한 설명 자세히 보기"
         android:textColor="#000000"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -46,7 +46,7 @@
         android:lineSpacingExtra="2sp"
         android:text="동영상 설명 >"
         android:textColor="#516492"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -58,6 +58,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="32dp"
         android:text="사용설명"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
