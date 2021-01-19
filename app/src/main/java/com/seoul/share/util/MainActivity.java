@@ -23,25 +23,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final Fragment_menu1 fragment_menu1 = new Fragment_menu1();
-    private final Fragment_menu2 fragment_menu2 = new Fragment_menu2();
-    private final Fragment_menu3 fragment_menu3 = new Fragment_menu3();
-    private final Fragment_menu4 fragment_menu4 = new Fragment_menu4();
-    private final Fragment_menu5 fragment_menu5 = new Fragment_menu5();
-
     private ActivityMainBinding binding;
-    Menu menu;
-    ArrayList<Integer> selectDrawableList = new ArrayList<>();
-    ArrayList<Integer> notSelectDrawableList = new ArrayList<>();
-    ArrayList<Integer> drawableList = new ArrayList<>();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        menu = binding.navView.getMenu();
         setNavigation();
 
     }
@@ -56,5 +44,4 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
 
