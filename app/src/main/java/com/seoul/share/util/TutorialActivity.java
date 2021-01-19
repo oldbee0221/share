@@ -56,7 +56,7 @@ public class TutorialActivity extends AppCompatActivity {
         binding.viewPager.setAdapter(pagerAdapter);
         binding.viewPager.addOnPageChangeListener(viewPagerPageChangeListener);
 
-        binding.btnSkip.setOnClickListener(new View.OnClickListener() { // 건너띄기 버튼 클릭시 메인화면으로 이동
+        binding.tvSkip.setOnClickListener(new View.OnClickListener() { // 건너띄기 버튼 클릭시 메인화면으로 이동
             @Override
             public void onClick(View v) {
                 moveMainPage();
@@ -72,6 +72,7 @@ public class TutorialActivity extends AppCompatActivity {
                     binding.viewPager.setCurrentItem(current);
                 } else {
 //                마지막 페이지라면 메인페이지로 이동
+
                     moveMainPage();
                 }
             }
@@ -116,11 +117,12 @@ public class TutorialActivity extends AppCompatActivity {
             if (position == layouts.length - 1) {
 //                마지막 페이지에서는 다음 버튼을 시작버튼으로 교체
                 binding.btnNext.setText(getString(R.string.start)); // 다음 버튼을 시작버튼으로 글자 교체
-                binding.btnSkip.setVisibility(View.GONE);
+                binding.btnNext.setVisibility(View.VISIBLE);
+                binding.tvSkip.setVisibility(View.GONE);
             } else {
 //                마지막 페이지가 아니라면 다음과 건너띄기 버튼 출력
-                binding.btnNext.setText(getString(R.string.next));
-                binding.btnSkip.setVisibility(View.VISIBLE);
+                binding.btnNext.setVisibility(View.INVISIBLE);
+                binding.tvSkip.setVisibility(View.VISIBLE);
             }
         }
 

@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/fragment_menu3"
         android:name="com.seoul.share.fragment.Fragment_menu3"
-        android:label="내대여물품"
+        android:label="내마을물품"
         tools:layout="@layout/fragment_menu3" />
     <fragment
         android:id="@+id/fragment_menu4"

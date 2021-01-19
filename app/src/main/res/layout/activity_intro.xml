@@ -47,7 +47,7 @@
     <!--    스킵 버튼-->
     <!--    layout_alignParent로 아래 왼쪽에 위치-->
     <Button
-        android:id="@+id/btn_skip"
+        android:id="@+id/tv_skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"

@@ -19,6 +19,13 @@ public class Fragment_menu3 extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentMenu3Binding.inflate(inflater,container,false);
+
+        setAdapter();
         return binding.getRoot();
-    };
+    }
+
+    private void setAdapter() {
+        /** 아시죠우? */
+        binding.rvItemExchangeList.setAdapter(new ItemListAdapter());
+    }
 }

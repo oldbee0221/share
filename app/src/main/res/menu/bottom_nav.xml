@@ -18,7 +18,7 @@
     <item
         android:id="@+id/fragment_menu3"
         android:icon="@drawable/main_buttom_navi_myproducts"
-        android:title="내대여물품"
+        android:title="내마을물품"
         app:showAsAction="never"/>
 
     <item

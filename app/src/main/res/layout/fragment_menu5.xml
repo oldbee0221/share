@@ -1,399 +1,376 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/grey"
     tools:context=".fragment.Fragment_menu5">
 
 
-    <LinearLayout
+    <View
+        android:id="@+id/view14"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
-        android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:background="@drawable/indigo_button_round">
-
-
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/iv_question"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/grey"
-        android:layout_margin="14dp"
-        >
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/seemore_"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="@+id/layout_likeItems"
+        app:layout_constraintTop_toTopOf="@+id/tv_question" />
 
-        <LinearLayout
-
-            android:id="@+id/infobutton1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="7dp"
-            android:background="@drawable/white_button_round"
-            android:orientation="horizontal"
-            >
-
-            <ImageView
-                android:src="@drawable/receive_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="23dp"
-                android:paddingRight="23dp"
-                android:paddingTop="21dp"
-                android:paddingBottom="21dp"
-
-                />
-
-            <TextView
-                android:text="대여신청물품"
-                android:textStyle="normal"
-                android:textSize="15dp"
-                android:textColor="#516492"
-                android:lineSpacingExtra="1sp"
-                android:paddingTop="30dp"
-                android:paddingBottom="26dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-
-            android:id="@+id/infobutton2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="7dp"
-            android:background="@drawable/white_button_round"
-            android:orientation="horizontal"
-            >
-
-            <ImageView
-                android:src="@drawable/approval_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="23dp"
-                android:paddingRight="23dp"
-                android:paddingTop="21dp"
-                android:paddingBottom="21dp"
-
-                />
-
-            <TextView
-                android:text="대여승인물품"
-                android:textStyle="normal"
-                android:textSize="15dp"
-                android:textColor="#516492"
-                android:lineSpacingExtra="1sp"
-                android:paddingTop="30dp"
-                android:paddingBottom="26dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/iv_noticeBoard"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/grey"
-        android:layout_marginLeft="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="14dp"
-        >
+        android:src="@drawable/seemore_"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="@+id/iv_question"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
 
-        <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_ItemsApprovedRental"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/menu5_layout_background"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+        app:layout_constraintStart_toEndOf="@+id/layout_itemsRental"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
-            android:id="@+id/infobutton3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="7dp"
-            android:background="@drawable/white_button_round"
-            android:orientation="horizontal"
-            >
-
-            <ImageView
-                android:src="@drawable/setting_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="23dp"
-                android:paddingRight="23dp"
-                android:paddingTop="21dp"
-                android:paddingBottom="21dp"
-
-                />
-
-            <TextView
-                android:text="내물품관리"
-                android:textStyle="normal"
-                android:textSize="15dp"
-                android:textColor="#516492"
-                android:lineSpacingExtra="1sp"
-                android:paddingTop="30dp"
-                android:paddingBottom="26dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-
-            android:id="@+id/infobutton4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="7dp"
-            android:background="@drawable/white_button_round"
-            android:orientation="horizontal"
-            >
-
-            <ImageView
-                android:src="@drawable/addheart_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="23dp"
-                android:paddingRight="23dp"
-                android:paddingTop="21dp"
-                android:paddingBottom="21dp"
-
-                />
-
-            <TextView
-                android:text="찜한물품"
-                android:textStyle="normal"
-                android:textSize="15sp"
-                android:textColor="#516492"
-                android:lineSpacingExtra="0dp"
-                android:paddingTop="30dp"
-                android:paddingBottom="26dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-       </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/round_layout"
-        android:orientation="vertical">
-
-
-        <LinearLayout
-            android:id="@+id/infoline4"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginBottom="18dp"
-            android:orientation="horizontal">
+            android:layout_marginStart="16dp"
+            android:src="@drawable/approval_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:orientation="vertical"
-                >
-
-                <TextView
-                    android:text="관리자에게 문의하기"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textStyle="normal"
-                    android:textSize="12sp"
-                    android:textColor="#000000"
-
-                    android:lineSpacingExtra="1sp"  />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:textStyle="normal"
-                    android:textSize="8sp"
-                    android:textColor="#848484"
-                    android:lineSpacingExtra="1sp"
-                    android:text="* 어플 사용법, 대여신청 방법, 용어 등 관련하여 질문하기"
-                    />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-
-                >
-
-            <ImageButton
-                android:src="@drawable/seemore_"
-                android:background="@color/white"
-                android:layout_marginRight="36dp"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
-
-            </LinearLayout>
-
-
-
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_centerInParent="true"
-            android:background="@color/grey" />
-
-        <LinearLayout
-            android:id="@+id/infoline5"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginBottom="18dp"
-            android:orientation="horizontal">
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="0.5sp"
+            android:text="대여승인물품"
+            android:textColor="#516492"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageView16" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_likeItems"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/menu5_layout_background"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/layout_manageMyItems"
+        app:layout_constraintTop_toBottomOf="@+id/layout_ItemsApprovedRental">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                >
-
-                <TextView
-                    android:text="공지사항"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="normal"
-                    android:textSize="12sp"
-                    android:textColor="#000000"
-
-                    android:lineSpacingExtra="1sp"  />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:textStyle="normal"
-                    android:textSize="8sp"
-                    android:textColor="#848484"
-                    android:lineSpacingExtra="1sp"
-                    android:text="* 계정, 이용약관, 권한 허용 등"
-                    />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-
-                >
-
-                <ImageButton
-                    android:src="@drawable/seemore_"
-                    android:background="@color/white"
-                    android:layout_marginRight="36dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
-
-            </LinearLayout>
-
-
-
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_centerInParent="true"
-            android:background="@color/grey" />
-
-        <LinearLayout
-            android:id="@+id/infoline6"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:layout_marginLeft="36dp"
-            android:layout_marginBottom="18dp"
-            android:orientation="horizontal">
+            android:layout_marginStart="16dp"
+            android:src="@drawable/addheart_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="0.5sp"
+            android:text="찜한물품"
+            android:textColor="#516492"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv__"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="내마을정보"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/noticepage2_"
+        app:layout_constraintBottom_toBottomOf="@+id/tv__"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv__" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/menu5_userdatalayout_background"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/tv__"
+        app:layout_constraintTop_toBottomOf="@+id/tv__">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                >
+            android:src="@drawable/mypicture4_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:text="설정"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textStyle="normal"
-                    android:textSize="12sp"
-                    android:textColor="#000000"
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:lineSpacingExtra="1sp"
+            android:text="가나다"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
-                    android:lineSpacingExtra="1sp"  />
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:lineSpacingExtra="0.5sp"
+            android:text="시흥동 박미사랑마을"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/seemore2_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    android:textStyle="normal"
-                    android:textSize="8sp"
-                    android:textColor="#848484"
-                    android:lineSpacingExtra="1sp"
-                    android:text="* 계정, 이용약관, 권한 허용 등"
-                    />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_itemsRental"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/menu5_layout_background"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/layout_ItemsApprovedRental"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toTopOf="@+id/layout_ItemsApprovedRental">
 
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/receive_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            </LinearLayout>
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="0.5sp"
+            android:text="대여신청물품"
+            android:textColor="#516492"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/imageView15" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_manageMyItems"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/menu5_layout_background"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/layout_likeItems"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_itemsRental">
 
-                >
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/setting_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageButton
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:layout_marginRight="36dp"
-                    android:src="@drawable/seemore_" />
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="0.5sp"
+            android:text="내물품관리"
+            android:textColor="#516492"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            </LinearLayout>
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="0.5sp"
+        android:text="관리자에게 문의하기"
+        app:layout_constraintStart_toStartOf="@+id/layout_manageMyItems"
+        app:layout_constraintTop_toBottomOf="@+id/layout_manageMyItems" />
 
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="10sp"
+        android:textColor="#848484"
+        android:lineSpacingExtra="0.5sp"
+        android:text="* 어플 사용법, 대여신청 방법, 용어 등 관련하여 질문하기"
+        app:layout_constraintStart_toStartOf="@+id/tv_question"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question" />
 
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="0.5sp"
+        android:text="공지사항"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/view13" />
 
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="10sp"
+        android:textColor="#848484"
+        android:lineSpacingExtra="0.5sp"
+        android:text="*정기 점검, 시스템 오류 안내"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
-        </LinearLayout>
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="0.5sp"
+        android:text="설정"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/view14" />
 
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="10sp"
+        android:textColor="#848484"
+        android:lineSpacingExtra="0.5sp"
+        android:text="* 계정, 이용약관, 권한 허용 등"
+        app:layout_constraintStart_toStartOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_centerInParent="true"
-            android:background="@color/grey" />
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/seemore_"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/iv_noticeBoard"
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
 
+    <View
+        android:id="@+id/view13"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
-    </LinearLayout>
-
-
-</LinearLayout>
+    <View
+        android:id="@+id/view15"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+</androidx.constraintlayout.widget.ConstraintLayout>
