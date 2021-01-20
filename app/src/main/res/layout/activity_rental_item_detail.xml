@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".util.RentalItemDetailActivity">
+
+
+    <LinearLayout
+        android:id="@+id/li_dotList"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_imageList"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/round_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tv_itemCurrentRental"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#2db394"
+            android:lineSpacingExtra="2.5sp"
+            android:text="대여가능"
+            app:layout_constraintStart_toStartOf="@+id/tv_itemPrice"
+            app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+        <TextView
+            android:id="@+id/tv_itemThisCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2.5sp"
+            android:text="1개"
+            app:layout_constraintStart_toStartOf="@+id/tv_itemBuyYear"
+            app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="0.5sp"
+            android:text="대여상태"
+            app:layout_constraintBottom_toTopOf="@+id/tv_itemLikeCount"
+            app:layout_constraintStart_toStartOf="@+id/textView37"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/tv_itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="1sp"
+            android:text="전기릴"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_itemDescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="2.5sp"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/tv_itemTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tv_itemTitle"
+            tools:text="시흥동 박미사랑마을 지하1층 다목적홀 물품입니다.\n프로그램을 운영하지 않는날 대여가능합니다." />
+
+        <TextView
+            android:id="@+id/tv_itemRentalCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/item_rental_available"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="1sp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="대여가능"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/tv_itemDescribe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_itemTitle" />
+
+        <View
+            android:id="@+id/view19"
+            android:background="#f2f2f2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_itemDescribe" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btn_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_button_round"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="채팅으로 문의하기"
+                android:textColor="#feae2a"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btn_rental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_round"
+                android:gravity="center"
+                android:lineSpacingExtra="1sp"
+                android:text="대여 신청하기"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="0.5sp"
+            android:text="보유개소"
+            app:layout_constraintStart_toStartOf="@+id/tv_itemDescribe"
+            app:layout_constraintTop_toBottomOf="@+id/view19" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="0.5sp"
+            android:text="구입년도"
+            app:layout_constraintBottom_toTopOf="@+id/textView36"
+            app:layout_constraintStart_toStartOf="@+id/textView38"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="0.5sp"
+            android:text="보유수량"
+            app:layout_constraintBottom_toTopOf="@+id/textView37"
+            app:layout_constraintStart_toStartOf="@+id/textView35"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="0.5sp"
+            android:text="추정단가(원)"
+            app:layout_constraintBottom_toTopOf="@+id/textView39"
+            app:layout_constraintStart_toStartOf="@+id/textView36"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="0.5sp"
+            android:text="규격명"
+            app:layout_constraintBottom_toTopOf="@+id/textView35"
+            app:layout_constraintStart_toStartOf="@+id/textView34"
+            app:layout_constraintTop_toBottomOf="@+id/textView34"
+            app:layout_constraintVertical_bias="0.35000002" />
+
+        <TextView
+            android:id="@+id/tv_itemTownName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/rental_time_detail_blueround"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="2.5sp"
+            android:padding="6dp"
+            android:text="시흥동 박미사랑마을"
+            android:textColor="#516492"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/textView34"
+            app:layout_constraintStart_toEndOf="@+id/textView34"
+            app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/tv_standardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2.5sp"
+            android:text="없음"
+            app:layout_constraintStart_toStartOf="@+id/tv_itemTownName"
+            app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+        <TextView
+            android:id="@+id/tv_itemBuyYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2.5sp"
+            android:text="2017년"
+            app:layout_constraintStart_toStartOf="@+id/tv_standardName"
+            app:layout_constraintTop_toTopOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/tv_itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="2.5sp"
+            android:text="100,000원"
+            app:layout_constraintStart_toStartOf="@+id/tv_itemThisCount"
+            app:layout_constraintTop_toTopOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/tv_itemLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#828282"
+            android:lineSpacingExtra="1sp"
+            android:text="20"
+            android:drawableStart="@drawable/heart2_"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintStart_toStartOf="@+id/textView39"
+            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/back_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/share_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

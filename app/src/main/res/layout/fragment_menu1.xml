@@ -29,7 +29,7 @@
         tools:visibility="visible">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
+            android:id="@+id/layout_searchBar"
             android:layout_width="0dp"
             android:layout_height="28dp"
             android:layout_marginStart="16dp"
@@ -53,7 +53,7 @@
                 app:srcCompat="@drawable/search2_" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/iv_searchBarClose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -74,7 +74,7 @@
                 android:inputType="textPersonName"
                 android:paddingBottom="4dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                app:layout_constraintEnd_toStartOf="@+id/iv_searchBarClose"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -92,11 +92,11 @@
             android:textSize="20sp"
             android:textStyle="normal"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+            app:layout_constraintTop_toBottomOf="@+id/layout_searchBar" />
 
 
         <ImageButton
-            android:id="@+id/subButton1"
+            android:id="@+id/ibtn_setTown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintEnd_toEndOf="@+id/subButton1"
+            app:layout_constraintEnd_toEndOf="@+id/ibtn_setTown"
             app:layout_constraintStart_toStartOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 

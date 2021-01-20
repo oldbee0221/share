@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rental_town_select_check_use" android:state_selected="true"/>
+    <item android:drawable="@drawable/rental_town_select_check_not_use"/>
+
+</selector>

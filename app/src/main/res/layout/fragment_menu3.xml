@@ -44,7 +44,7 @@
 
 
         <ImageButton
-            android:id="@+id/subButton1"
+            android:id="@+id/ibtn_setTown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintEnd_toEndOf="@+id/subButton1"
+            app:layout_constraintEnd_toEndOf="@+id/ibtn_setTown"
             app:layout_constraintStart_toStartOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
