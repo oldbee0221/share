@@ -86,7 +86,7 @@ public class RentalTownSelectActivity extends AppCompatActivity {
             button.setTextColor(Color.parseColor("#FFFFFF"));
         } else {
             button.setSelected(false);
-            button.setTextColor(Color.parseColor("#000000"));
+            button.setTextColor(Color.parseColor("#9b9b9b"));
         }
     }
 }

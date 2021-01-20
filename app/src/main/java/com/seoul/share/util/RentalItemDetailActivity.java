@@ -2,6 +2,7 @@ package com.seoul.share.util;
 
 import android.os.Bundle;
 import android.text.Html;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,16 @@ public class RentalItemDetailActivity extends AppCompatActivity {
         setLayouts();
         addBottomDots(0);
         setUpViewPager();
+        clickEvent();
+    }
+
+    private void clickEvent() {
+        binding.ivBackPress.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 
     private void setUpViewPager() {

@@ -9,6 +9,7 @@
         android:id="@+id/li_background"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="5dp"
         android:background="@drawable/rental_town_select_check"
         android:gravity="center"

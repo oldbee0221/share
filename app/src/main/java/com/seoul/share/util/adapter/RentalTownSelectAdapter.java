@@ -50,10 +50,10 @@ public class RentalTownSelectAdapter extends RecyclerView.Adapter<RentalTownSele
                 public void onClick(View view) {
                     if(!li_background.isSelected()){
                         li_background.setSelected(true);
-                        tv_townName.setTextColor(Color.parseColor("#000000"));
+                        tv_townName.setTextColor(Color.parseColor("#ffffff"));
                     }else{
                         li_background.setSelected(false);
-                        tv_townName.setTextColor(Color.parseColor("#ffffff"));
+                        tv_townName.setTextColor(Color.parseColor("#9b9b9b"));
                     }
                 }
             });
