@@ -1,4 +1,4 @@
-package com.seoul.share.fragment;
+package com.seoul.share.util.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,14 +10,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.seoul.share.R;
 
-public class Menu2Adapter extends RecyclerView.Adapter<Menu2Adapter.ViewHolder> {
-
+public class Menu3OfItemUploadImageAdapter extends RecyclerView.Adapter<Menu3OfItemUploadImageAdapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.item_menu2_video_list, parent, false);
+        LayoutInflater inflater =
+                (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        View view = inflater.inflate(R.layout.item_menu3of_upload_image,parent,false);
         return new ViewHolder(view);
     }
 
@@ -28,18 +29,12 @@ public class Menu2Adapter extends RecyclerView.Adapter<Menu2Adapter.ViewHolder> 
 
     @Override
     public int getItemCount() {
-        /**TODO: 리스트의 사이즈로 변경 해주세용 */
         return 5;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
-        /**
-         * TODO: 여기도우 설정~
-         */
-
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
         }
     }
 }

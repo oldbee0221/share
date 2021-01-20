@@ -1,5 +1,6 @@
 package com.seoul.share.util;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -16,6 +17,7 @@ public class RentalItemDetailActivity extends AppCompatActivity {
 
     private ActivityRentalItemDetailBinding binding;
     private int[] layouts;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,21 +25,29 @@ public class RentalItemDetailActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setLayouts();
-        addBottomDots(0);
         setUpViewPager();
         clickEvent();
     }
 
     private void clickEvent() {
-        binding.ivBackPress.setOnClickListener(new View.OnClickListener(){
+        binding.ivBackPress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();
             }
         });
+        binding.btnRental.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RentalItemDetailActivity.this,
+                        RentalDecisionActivity.class));
+            }
+        });
     }
 
     private void setUpViewPager() {
+        addBottomDots(0);
+
         binding.vpImageList.setAdapter(new RentalItemDetailAdapter());
         binding.vpImageList.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override

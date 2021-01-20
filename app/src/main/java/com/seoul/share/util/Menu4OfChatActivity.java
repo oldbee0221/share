@@ -4,16 +4,15 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.seoul.share.R;
-import com.seoul.share.databinding.ActivitySearchmainBinding;
+import com.seoul.share.databinding.ActivityMenu4OfChatBinding;
 
-public class SearchmainActivity extends AppCompatActivity {
+public class Menu4OfChatActivity extends AppCompatActivity {
 
-    private ActivitySearchmainBinding binding;
+    private ActivityMenu4OfChatBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivitySearchmainBinding.inflate(getLayoutInflater());
+        binding = ActivityMenu4OfChatBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
     }
 }

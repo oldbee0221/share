@@ -1,5 +1,6 @@
 package com.seoul.share.util;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -70,6 +71,14 @@ public class RentalTownSelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 onBackPressed();
+            }
+        });
+
+        binding.btnStart.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RentalTownSelectActivity.this,MainActivity.class));
             }
         });
     }

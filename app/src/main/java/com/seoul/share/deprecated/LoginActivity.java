@@ -11,6 +11,7 @@ import com.seoul.share.R;
 import com.seoul.share.databinding.ActivityLoginBinding;
 import com.seoul.share.util.FInd_pwActivity;
 import com.seoul.share.util.MainActivity;
+import com.seoul.share.util.RentalTownSelectActivity;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
                 switch (view.getId()){
                     //첫번째 버튼 행동
                     case R.id.login_button:
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, RentalTownSelectActivity.class);
                          startActivity(intent);
                          break;
                     //두번째 버튼 행동

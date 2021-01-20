@@ -4,66 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Fragment_menu4">
+    tools:context=".util.NotificationActivity">
 
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/xblack_"
+        app:layout_constraintBottom_toBottomOf="@+id/textView51"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView51" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView51"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:lineSpacingExtra="1sp"
-        android:text="채팅"
-        android:textColor="#000000"
-        android:textSize="20sp"
+        android:layout_marginTop="45dp"
         android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="1sp"
+        tools:text="알림"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/iv_notice"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/noticepage2_"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView13" />
-
     <View
-        android:id="@+id/view11"
+        android:id="@+id/view24"
         android:layout_width="wrap_content"
-        android:layout_height="2.5dp"
-        android:layout_marginTop="16dp"
-        android:background="#f2f2f2"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/notification_view_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView53"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:lineSpacingExtra="4sp"
         android:drawableStart="@drawable/point_"
-        android:text=" 각 알림 항목은 좌측 방향으로 밀어서 삭제 가능합니다."
+        android:lineSpacingExtra="4sp"
         android:textColor="#000000"
         android:textSize="12sp"
         android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/view24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view11" />
+        app:layout_constraintTop_toTopOf="@+id/view24"
+        android:text="  각 알림 항목은 좌측 방향으로 밀어서 삭제 가능합니다." />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_chatList"
-        android:layout_width="0dp"
+        android:id="@+id/rv_notificationList"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="14dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/view24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,9 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.seoul.share.R;
 import com.seoul.share.databinding.ActivityRentalmainBinding;
-import com.seoul.share.databinding.ActivitySearchmainBinding;
 
 public class RentalMainActivity extends AppCompatActivity {
 
