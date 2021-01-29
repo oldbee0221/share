@@ -186,7 +186,7 @@
             android:textSize="14sp"
             android:textColor="#000000"
             android:lineSpacingExtra="0.5sp"
-            android:text="보유개소"
+            android:text="보유마을"
             app:layout_constraintStart_toStartOf="@+id/tv_itemDescribe"
             app:layout_constraintTop_toBottomOf="@+id/view19" />
 

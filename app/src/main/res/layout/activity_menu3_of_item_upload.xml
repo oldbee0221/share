@@ -38,7 +38,7 @@
             android:textStyle="normal"
             android:textSize="12sp"
             android:lineSpacingExtra="0.5sp"
-            android:hint="개소를 입력해주세요."
+            android:hint="마을를 입력해주세요."
             android:paddingStart="8dp"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
@@ -231,7 +231,7 @@
             android:textSize="14sp"
             android:textColor="#516492"
             android:lineSpacingExtra="1sp"
-            android:text="보유개소"
+            android:text="보유마을"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 

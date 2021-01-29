@@ -38,6 +38,14 @@ public class QuestionActivity extends BaseActivity<ActivityQuestionBinding> {
                 onBackPressed();
             }
         });
+        binding.btnPersonalInquiry.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(QuestionActivity.this
+                        , PersonalInquiryActivity.class));
+            }
+        });
     }
 
     private void setAdapter() {

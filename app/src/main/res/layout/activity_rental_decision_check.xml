@@ -42,7 +42,7 @@
             android:layout_marginTop="6dp"
             android:gravity="center_horizontal"
             android:lineSpacingExtra="3sp"
-            android:text="개소 관리자에서 대여신청 내역을 확인 후\n승인 시 대여가 완료됩니다.\n(승인 시 푸시메시지를 보내드립니다.)"
+            android:text="마을 관리자에서 대여신청 내역을 확인 후\n승인 시 대여가 완료됩니다.\n(승인 시 푸시메시지를 보내드립니다.)"
             android:textColor="#516492"
             android:textSize="14sp"
             android:textStyle="normal"

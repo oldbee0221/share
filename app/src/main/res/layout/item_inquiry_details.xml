@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/nanum_square_l"
             android:lineSpacingExtra="2.5sp"
-            android:text="안녕하세요 회원님\n\n먼저 서비스를 이용해 주셔서 감사합니다.\n개소에 소속된 회원님이라면 누구든지 서비스를 이용하여 물품을 대여 하실 수 있습니다.\n\n감사합니다"
+            android:text="안녕하세요 회원님\n\n먼저 서비스를 이용해 주셔서 감사합니다.\n마을에 소속된 회원님이라면 누구든지 서비스를 이용하여 물품을 대여 하실 수 있습니다.\n\n감사합니다"
             android:textColor="#000000"
             android:textSize="12sp"
             android:textStyle="normal"

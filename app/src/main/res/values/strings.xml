@@ -17,7 +17,7 @@
 
 
     <string name="tutorlal_03">대여 신청 후 승인이 완료되면 </string>
-    <string name="tutorlal_03_1">개소에 방문하여 물품 수령 </string>
+    <string name="tutorlal_03_1">마을에 방문하여 물품 수령 </string>
     <string name="tutorlal_03_2">대여기간 내 물품을 사용하고 \n 늦지 않게 반납하면 끝  </string>
     <string name="title_activity_test">Test</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

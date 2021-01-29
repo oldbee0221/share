@@ -1,5 +1,6 @@
 package com.seoul.share.ui.activity.mypage;
 
+import android.content.Intent;
 import android.view.View;
 
 import com.seoul.share.databinding.ActivityInquiryDetailsBinding;
@@ -28,6 +29,14 @@ public class InquiryDetailsActivity extends BaseActivity<ActivityInquiryDetailsB
             @Override
             public void onClick(View view) {
                 onBackPressed();
+            }
+        });
+        binding.btnPersonalInquiry.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(InquiryDetailsActivity.this
+                        , PersonalInquiryActivity.class));
             }
         });
     }

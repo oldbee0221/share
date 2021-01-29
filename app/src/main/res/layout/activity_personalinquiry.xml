@@ -80,6 +80,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:background="#fff"
+        android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView107"
         app:layout_constraintTop_toBottomOf="@+id/textView107">
@@ -94,6 +95,7 @@
             android:textColor="#000000"
             android:lineSpacingExtra="0.5sp"
             android:text="내마을물품인 뭔가요?"
+
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -121,7 +123,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
         android:background="#fff"
-
+        android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView108"
         app:layout_constraintTop_toBottomOf="@+id/textView108">

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fbfbfb"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <View
         android:id="@+id/view37"
@@ -97,7 +98,7 @@
         android:textSize="14sp"
         android:textColor="#516492"
         android:lineSpacingExtra="1sp"
-        tools:text="시스템 정기 점검 안내 "
+        android:text="시스템 정기 점검 안내 "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view42" />
 
@@ -111,7 +112,7 @@
         android:textSize="12sp"
         android:textColor="#000000"
         android:lineSpacingExtra="2sp"
-        tools:text="점검 일시 : 2020.10.20 ~ 2020.10.21\n(점검 시간은 당사의 사정에 따라 다소 변동될 수 있습니다.)\n\n시스템 점검 기간동안 서비스 이용이 다소 불편하시더라도 너그러운\n부탁드립니다.\n\n감사합니다."
+        android:text="점검 일시 : 2020.10.20 ~ 2020.10.21\n(점검 시간은 당사의 사정에 따라 다소 변동될 수 있습니다.)\n\n시스템 점검 기간동안 서비스 이용이 다소 불편하시더라도 너그러운\n부탁드립니다.\n\n감사합니다."
         app:layout_constraintStart_toStartOf="@+id/textView113"
         app:layout_constraintTop_toBottomOf="@+id/textView113" />
 
