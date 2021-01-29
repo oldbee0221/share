@@ -1,6 +1,8 @@
 package com.seoul.share.ui.base;
 
 import android.app.Activity;
+import android.app.Application;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.renderscript.ScriptGroup;
 import android.view.View;
@@ -18,6 +20,7 @@ public abstract class BaseActivity<VB extends ViewBinding> extends AppCompatActi
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         this.getInitBinding();
         setContentView(binding.getRoot());
         setOnCreate();
