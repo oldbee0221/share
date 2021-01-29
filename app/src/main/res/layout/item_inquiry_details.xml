@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/backgroundd_solid_blue_round"
+        android:fontFamily="@font/nanum_square_b"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="0.5sp"
+        android:paddingStart="16dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="2dp"
+        android:text="답변대기"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/nanum_square_l"
+        android:lineSpacingExtra="1sp"
+        android:text="2020.10.11"
+        android:textColor="#828282"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView102"
+        app:layout_constraintStart_toEndOf="@+id/textView102"
+        app:layout_constraintTop_toTopOf="@+id/textView102" />
+
+    <TextView
+        android:id="@+id/textView104"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nanum_square_l"
+        android:lineSpacingExtra="2.5sp"
+        android:text="대여 신청은 어떻게 할 수 있나요?"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView102"
+        app:layout_constraintTop_toBottomOf="@+id/textView102" />
+
+    <ImageView
+        android:id="@+id/iv_answerCheck"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_fold_updown" />
+
+    <View
+        android:id="@+id/view39"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView104" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_answer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/view39"
+        app:layout_constraintStart_toStartOf="@+id/view39"
+        app:layout_constraintTop_toBottomOf="@+id/view39">
+
+        <TextView
+            android:id="@+id/textView105"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_square_l"
+            android:lineSpacingExtra="2.5sp"
+            android:text="안녕하세요 회원님\n\n먼저 서비스를 이용해 주셔서 감사합니다.\n개소에 소속된 회원님이라면 누구든지 서비스를 이용하여 물품을 대여 하실 수 있습니다.\n\n감사합니다"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

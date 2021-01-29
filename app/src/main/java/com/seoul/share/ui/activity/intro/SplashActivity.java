@@ -12,13 +12,13 @@ import com.seoul.share.util.Preference;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private final int SPLASH_DISPLAY_TIME = 2000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
         Handler handler = new Handler();
+        int SPLASH_DISPLAY_TIME = 2000;
         handler.postDelayed(new Runnable(){
             @Override
             public void run(){

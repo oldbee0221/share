@@ -77,7 +77,7 @@
         app:layout_constraintBottom_toTopOf="@+id/view34"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/items_rental_check_list_background" />
+        app:srcCompat="@drawable/background_fold_updown" />
 
     <View
         android:id="@+id/view34"
@@ -244,7 +244,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:background="@drawable/item_rantal_date_background"
+            android:background="@drawable/backgroundd_very_gray_stroke_layout"
             android:fontFamily="@font/nanum_square_l"
             android:lineSpacingExtra="2.5sp"
             android:paddingStart="12dp"
@@ -296,7 +296,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/backgroundd_very_gray_stroke_layout"
+            android:background="@drawable/backgroundd_solid_blue_round"
             android:fontFamily="@font/nanum_square_b"
             android:gravity="center_horizontal"
             android:lineSpacingExtra="0.5sp"
