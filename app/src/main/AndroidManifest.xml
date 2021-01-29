@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.TownDetailActivity"/>
         <activity android:name=".ui.activity.Menu4OfChatActivity"/>
         <activity android:name=".ui.activity.Menu3OfItemUploadActivity" />
         <activity android:name=".ui.activity.Menu2OfVideoInfoActivity" />

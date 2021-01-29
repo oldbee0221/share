@@ -17,7 +17,7 @@ import com.seoul.share.ui.activity.NotificationActivity;
 import com.seoul.share.ui.adapter.Menu2Adapter;
 import com.seoul.share.ui.base.BaseFragment;
 
-public class Fragment_menu2 extends BaseFragment<FragmentMenu2Binding> {
+public class FragmentMenu2 extends BaseFragment<FragmentMenu2Binding> {
 
 
     @Override

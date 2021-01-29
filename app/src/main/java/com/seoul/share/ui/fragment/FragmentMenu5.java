@@ -10,33 +10,26 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.seoul.share.databinding.FragmentMenu4Binding;
+import com.seoul.share.databinding.FragmentMenu5Binding;
 import com.seoul.share.ui.activity.NotificationActivity;
-import com.seoul.share.ui.adapter.Menu4Adapter;
 import com.seoul.share.ui.base.BaseFragment;
 
-public class Fragment_menu4 extends BaseFragment<FragmentMenu4Binding> {
+public class FragmentMenu5 extends BaseFragment<FragmentMenu5Binding> {
 
 
     @Override
-    protected FragmentMenu4Binding getBinding(LayoutInflater inflater, ViewGroup container) {
-        return FragmentMenu4Binding.inflate(inflater, container, false);
+    protected FragmentMenu5Binding getBinding(LayoutInflater inflater, ViewGroup container) {
+        return FragmentMenu5Binding.inflate(inflater,container,false);
     }
 
     @Override
     protected void setViewCreated() {
-        setAdapter();
         clickEvent();
-
     }
 
-
-    private void setAdapter() {
-        binding.rvChatList.setAdapter(new Menu4Adapter());
-    }
 
     private void clickEvent() {
-        binding.ivNotice.setOnClickListener(new View.OnClickListener() {
+        binding.ivNotice.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {

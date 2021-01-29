@@ -16,7 +16,7 @@ import com.seoul.share.ui.activity.NotificationActivity;
 import com.seoul.share.ui.adapter.Menu3ItemListAdapter;
 import com.seoul.share.ui.base.BaseFragment;
 
-public class Fragment_menu3 extends BaseFragment<FragmentMenu3Binding> {
+public class FragmentMenu3 extends BaseFragment<FragmentMenu3Binding> {
 
     @Override
     protected FragmentMenu3Binding getBinding(LayoutInflater inflater, ViewGroup container) {

@@ -33,7 +33,6 @@ public class TutorialActivity extends BaseActivity<ActivityTutorialBinding> {
         setWindowSetting();
         setLayoutData();
         addBottomDots(0);
-
         setAdapter();
         clickListeners();
     }
