@@ -8,20 +8,22 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.seoul.share.R;
 import com.seoul.share.databinding.ActivityMainBinding;
+import com.seoul.share.ui.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     private ActivityMainBinding binding;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
-
-        setNavigation();
-
+    protected ActivityMainBinding getBinding() {
+        return ActivityMainBinding.inflate(getLayoutInflater());
     }
+
+    @Override
+    protected void setOnCreate() {
+        setNavigation();
+    }
+
         private void setNavigation() {
             NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
                     .findFragmentById(R.id.layout_main_frag);

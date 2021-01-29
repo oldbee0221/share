@@ -1,4 +1,4 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.intro;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,6 +13,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.seoul.share.R;
 import com.seoul.share.databinding.ActivityTutorialBinding;
+import com.seoul.share.ui.activity.auth.LoginActivity;
 import com.seoul.share.util.Preference;
 import com.seoul.share.ui.adapter.TutorialViewPagerAdapter;
 import com.seoul.share.ui.base.BaseActivity;

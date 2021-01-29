@@ -1,18 +1,14 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.rental;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.seoul.share.databinding.ActivityRentalDecisionCheckBinding;
+import com.seoul.share.ui.activity.MainActivity;
 import com.seoul.share.ui.base.BaseActivity;
 
 public class RentalDecisionCheckActivity extends BaseActivity<ActivityRentalDecisionCheckBinding> {
 
-    private ActivityRentalDecisionCheckBinding binding;
 
     @Override
     protected ActivityRentalDecisionCheckBinding getBinding() {

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view33"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:lineSpacingExtra="2sp"
+        android:text="홍길동님께 00000 0000물품 대여신청을\n하였습니다."
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
+        app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view33"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textView85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/nanum_square_l"
+        android:lineSpacingExtra="5sp"
+        android:text="2020.10.13"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView84"
+        app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+    <TextView
+        android:id="@+id/textView86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:gravity="end"
+        android:lineSpacingExtra="0.5sp"
+        android:text="승인대기"
+        android:textColor="#516492"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view34"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_seeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/items_rental_check_list_background" />
+
+    <View
+        android:id="@+id/view34"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_seeMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view34"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nanum_square_l"
+            android:lineSpacingExtra="2.5sp"
+            android:text="010-1234-5678"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/textView90"
+            app:layout_constraintTop_toBottomOf="@+id/textView95" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/nanum_square_b"
+            android:lineSpacingExtra="1sp"
+            android:text="대여마을 정보"
+            android:textColor="#516492"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_square_b"
+            android:lineSpacingExtra="0.5sp"
+            android:text="대여마을"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView87"
+            app:layout_constraintTop_toTopOf="@+id/textView94" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_square_b"
+            android:lineSpacingExtra="0.5sp"
+            android:text="담당자 이름"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView88"
+            app:layout_constraintTop_toTopOf="@+id/textView95" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_square_b"
+            android:lineSpacingExtra="0.5sp"
+            android:text="담당자 연락처"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView89"
+            app:layout_constraintTop_toTopOf="@+id/textView96" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_square_b"
+            android:lineSpacingExtra="0.5sp"
+            android:text="신청 수량"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView90"
+            app:layout_constraintTop_toTopOf="@+id/textView97" />
+
+        <TextView
+            android:id="@+id/textView92"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_square_b"
+            android:lineSpacingExtra="0.5sp"
+            android:text="대여 기간"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView91"
+            app:layout_constraintTop_toTopOf="@+id/textView99" />
+
+        <TextView
+            android:id="@+id/textView94"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/nanum_square_l"
+            android:lineSpacingExtra="2.5sp"
+            android:text="신사동 산새마을"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView95"
+            app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/nanum_square_l"
+            android:lineSpacingExtra="2.5sp"
+            android:text="가나다\n※주민공동체 운영회 일원"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView96"
+            app:layout_constraintTop_toBottomOf="@+id/textView94" />
+
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nanum_square_l"
+            android:lineSpacingExtra="2.5sp"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+
+            app:layout_constraintStart_toStartOf="@+id/textView96"
+            app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+        <TextView
+            android:id="@+id/tv_rentalCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/backgroundd_very_gray_stroke_layout"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="0.5sp"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="4dp"
+            android:text="신청취소"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/item_rantal_date_background"
+            android:fontFamily="@font/nanum_square_l"
+            android:lineSpacingExtra="2.5sp"
+            android:paddingStart="12dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp"
+            android:text="2020.10.27 ~ 2020.10.31"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/textView97"
+            app:layout_constraintTop_toBottomOf="@+id/textView97" />
+
+        <View
+            android:id="@+id/view35"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="#f2f2f2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rentalCancel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

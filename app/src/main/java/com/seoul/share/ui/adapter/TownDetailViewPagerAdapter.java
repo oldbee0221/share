@@ -10,23 +10,21 @@ import com.seoul.share.ui.fragment.TownDetailItemDetailFragment;
 
 public class TownDetailViewPagerAdapter extends FragmentStateAdapter {
 
-    TownDetailViewPagerAdapter(FragmentActivity fa){
+    public TownDetailViewPagerAdapter(FragmentActivity fa){
         super(fa);
     }
 
     @NonNull
     @Override
     public Fragment createFragment(int position) {
-        switch (position) {
-            case 1:
-                return new TownDetailItemDetailFragment();
-            default:
-                return new TownDetailFragment();
+        if (position == 1) {
+            return new TownDetailItemDetailFragment();
         }
+        return new TownDetailFragment();
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return 2;
     }
 }

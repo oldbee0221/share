@@ -15,6 +15,8 @@ public class TownDetailFragment extends BaseFragment<FragmentTownDetailBinding> 
 
     @Override
     protected void setViewCreated() {
-
+        /**
+         *TODO: 여러가지 인텐트에서 받을게 많음 추가 예정
+         */
     }
 }

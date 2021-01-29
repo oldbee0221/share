@@ -9,7 +9,6 @@ import com.seoul.share.ui.base.BaseActivity;
 
 public class Menu4OfChatActivity extends BaseActivity<ActivityMenu4OfChatBinding> {
 
-    private ActivityMenu4OfChatBinding binding;
 
     @Override
     protected ActivityMenu4OfChatBinding getBinding() {

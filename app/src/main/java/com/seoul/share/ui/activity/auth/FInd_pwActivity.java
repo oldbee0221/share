@@ -1,11 +1,8 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.auth;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
 import com.seoul.share.databinding.ActivityFindPwBinding;
@@ -14,7 +11,6 @@ import com.seoul.share.ui.base.BaseActivity;
 public class FInd_pwActivity extends BaseActivity<ActivityFindPwBinding> {
 
 
-    private ActivityFindPwBinding binding;
 
     @Override
     protected ActivityFindPwBinding getBinding() {

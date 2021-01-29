@@ -1,21 +1,18 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.rental;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.seoul.share.databinding.ActivityRentalTownSelectBinding;
+import com.seoul.share.ui.activity.MainActivity;
 import com.seoul.share.ui.adapter.RentalTownSelectAdapter;
 import com.seoul.share.ui.base.BaseActivity;
 
 public class RentalTownSelectActivity extends BaseActivity<ActivityRentalTownSelectBinding> {
 
-    private ActivityRentalTownSelectBinding binding;
 
     @Override
     protected ActivityRentalTownSelectBinding getBinding() {
@@ -80,7 +77,7 @@ public class RentalTownSelectActivity extends BaseActivity<ActivityRentalTownSel
 
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RentalTownSelectActivity.this,MainActivity.class));
+                startActivity(new Intent(RentalTownSelectActivity.this, MainActivity.class));
             }
         });
     }

@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_townAndItemDeatail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:tabIndicatorColor="#516492"
+        app:tabIndicatorGravity="bottom"
+        app:tabSelectedTextColor="#516492"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="1sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="@+id/tv_goToTheBack"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goToTheBack" />
+
+    <TextView
+        android:id="@+id/tv_goToTheBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_32"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="1sp"
+        android:text="마을 상세"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_goToTheBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_goToTheBack"
+        app:srcCompat="@drawable/shareblack_" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_townAndItemDeatail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tab_townAndItemDeatail"
+        app:layout_constraintStart_toStartOf="@+id/tab_townAndItemDeatail"
+        app:layout_constraintTop_toBottomOf="@+id/tab_townAndItemDeatail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

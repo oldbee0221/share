@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.seoul.share.databinding.FragmentTownDetailItemDetailBinding;
+import com.seoul.share.ui.adapter.ItemListAdapter;
 import com.seoul.share.ui.base.BaseFragment;
 
 public class TownDetailItemDetailFragment extends BaseFragment<FragmentTownDetailItemDetailBinding> {
@@ -14,6 +15,10 @@ public class TownDetailItemDetailFragment extends BaseFragment<FragmentTownDetai
 
     @Override
     protected void setViewCreated() {
+        setAdapter();
+    }
 
+    private void setAdapter() {
+        binding.rvItemList.setAdapter(new ItemListAdapter());
     }
 }

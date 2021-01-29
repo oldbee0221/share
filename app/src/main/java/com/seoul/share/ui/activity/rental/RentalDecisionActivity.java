@@ -1,17 +1,13 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.rental;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.databinding.ActivityRentalDecisionBinding;
 import com.seoul.share.ui.base.BaseActivity;
 
 public class RentalDecisionActivity extends BaseActivity<ActivityRentalDecisionBinding> {
 
-    private ActivityRentalDecisionBinding binding;
 
     @Override
     protected ActivityRentalDecisionBinding getBinding() {

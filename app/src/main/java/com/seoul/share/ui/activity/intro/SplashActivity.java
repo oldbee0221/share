@@ -1,4 +1,4 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.intro;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
+import com.seoul.share.ui.activity.auth.LoginActivity;
 import com.seoul.share.util.Preference;
 
 public class SplashActivity extends AppCompatActivity {

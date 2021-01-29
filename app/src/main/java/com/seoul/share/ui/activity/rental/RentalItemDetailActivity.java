@@ -1,12 +1,10 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.rental;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.seoul.share.R;
@@ -16,7 +14,6 @@ import com.seoul.share.ui.base.BaseActivity;
 
 public class RentalItemDetailActivity extends BaseActivity<ActivityRentalItemDetailBinding> {
 
-    private ActivityRentalItemDetailBinding binding;
     private int[] layouts;
 
     @Override
@@ -49,8 +46,8 @@ public class RentalItemDetailActivity extends BaseActivity<ActivityRentalItemDet
         binding.tvItemTownName.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(
-
+                startActivity(new Intent(RentalItemDetailActivity.this,
+                        TownDetailActivity.class
                 ));
             }
         });

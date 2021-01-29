@@ -24,12 +24,12 @@
         android:lineSpacingExtra="1sp"
         android:paddingStart="4dp"
         android:paddingEnd="4dp"
+        android:text="대여가능"
         android:textColor="#ffffff"
         android:textSize="12sp"
         android:textStyle="normal"
         app:layout_constraintStart_toEndOf="@+id/iv_videoImage"
-        app:layout_constraintTop_toTopOf="@+id/iv_videoImage"
-        android:text="백그라운드  item_rental로 시작하는걸 찾음 되요." />
+        app:layout_constraintTop_toTopOf="@+id/iv_videoImage" />
 
     <TextView
         android:id="@+id/tv_itemName"

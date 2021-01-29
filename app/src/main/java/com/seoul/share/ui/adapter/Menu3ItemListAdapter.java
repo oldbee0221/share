@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.seoul.share.R;
-import com.seoul.share.ui.activity.RentalItemDetailActivity;
+import com.seoul.share.ui.activity.rental.RentalItemDetailActivity;
 
 public class Menu3ItemListAdapter extends RecyclerView.Adapter<Menu3ItemListAdapter.ViewHolder> {
 

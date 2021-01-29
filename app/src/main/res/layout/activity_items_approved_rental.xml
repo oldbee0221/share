@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="1sp"
+        android:text="대여승인물품"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView81"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView81"
+        app:srcCompat="@drawable/xblack_" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#F6F4F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView81">
+
+        <View
+            android:id="@+id/view31"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#f2f2f2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view32"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#f2f2f2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView82"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:drawableStart="@drawable/point_"
+            android:fontFamily="@font/nanum_square_l"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="4sp"
+            android:text="  상세한 내용을 보시려면 화살표를 눌러주세요."
+            app:layout_constraintBottom_toTopOf="@+id/view32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/item_rental_search_mode_background"
+            android:paddingStart="22dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="4dp"
+            android:fontFamily="@font/nanum_square_b"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#516492"
+            android:lineSpacingExtra="0.5sp"
+            android:gravity="center_horizontal"
+            android:text="전체"
+            app:layout_constraintBottom_toTopOf="@+id/view32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view31" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_myItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
