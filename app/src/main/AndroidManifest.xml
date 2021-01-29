@@ -9,28 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".util.Menu4OfChatActivity"></activity>
-        <activity android:name=".util.Menu3OfItemUploadActivity" />
-        <activity android:name=".util.Menu2OfVideoInfoActivity" />
-        <activity android:name=".util.RentalTownSelectActivity" />
-        <activity android:name=".util.TutorialActivity" />
-        <activity android:name=".util.RentalDecisionCheckActivity" />
-        <activity android:name=".util.RentalDecisionActivity" />
-        <activity android:name=".util.RentalItemDetailActivity" />
-        <activity android:name=".util.MypagemainActivity" />
-        <activity android:name=".util.RentalMainActivity" />
-        <activity android:name=".util.NotificationActivity" />
-        <activity android:name=".util.Completed_pwActivity" />
-        <activity android:name=".util.FInd_pwActivity" />
-        <activity android:name=".deprecated.LoginActivity" />
-        <activity android:name=".util.SplashActivity">
+        <activity android:name=".ui.activity.Menu4OfChatActivity"/>
+        <activity android:name=".ui.activity.Menu3OfItemUploadActivity" />
+        <activity android:name=".ui.activity.Menu2OfVideoInfoActivity" />
+        <activity android:name=".ui.activity.RentalTownSelectActivity" />
+        <activity android:name=".ui.activity.TutorialActivity" />
+        <activity android:name=".ui.activity.RentalDecisionCheckActivity" />
+        <activity android:name=".ui.activity.RentalDecisionActivity" />
+        <activity android:name=".ui.activity.RentalItemDetailActivity" />
+        <activity android:name=".ui.activity.MypageMainActivity" />
+        <activity android:name=".ui.activity.RentalMainActivity" />
+        <activity android:name=".ui.activity.NotificationActivity" />
+        <activity android:name=".ui.activity.Completed_pwActivity" />
+        <activity android:name=".ui.activity.FInd_pwActivity" />
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".util.MainActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
     </application>
 
 </manifest>

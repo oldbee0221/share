@@ -10,7 +10,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".util.RentalItemDetailActivity">
+    tools:context=".ui.activity.RentalItemDetailActivity">
 
     <View
         android:id="@+id/view20"

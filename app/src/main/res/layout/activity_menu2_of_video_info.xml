@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".util.Menu2OfVideoInfoActivity">
+    tools:context=".ui.activity.Menu2OfVideoInfoActivity">
 
     <ImageView
         android:id="@+id/iv_notice"

@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/fragment_menu1"
-        android:name="com.seoul.share.fragment.Fragment_menu1"
+        android:name="com.seoul.share.ui.fragment.Fragment_menu1"
         android:label="홈"
         tools:layout="@layout/fragment_menu1" />
     <fragment
         android:id="@+id/fragment_menu2"
-        android:name="com.seoul.share.fragment.Fragment_menu2"
+        android:name="com.seoul.share.ui.fragment.Fragment_menu2"
         android:label="사용설명"
         tools:layout="@layout/fragment_menu2" />
     <fragment
         android:id="@+id/fragment_menu3"
-        android:name="com.seoul.share.fragment.Fragment_menu3"
+        android:name="com.seoul.share.ui.fragment.Fragment_menu3"
         android:label="내마을물품"
         tools:layout="@layout/fragment_menu3" />
     <fragment
         android:id="@+id/fragment_menu4"
-        android:name="com.seoul.share.fragment.Fragment_menu4"
+        android:name="com.seoul.share.ui.fragment.Fragment_menu4"
         android:label="채팅"
         tools:layout="@layout/fragment_menu4" />
     <fragment
         android:id="@+id/fragment_menu5"
-        android:name="com.seoul.share.fragment.Fragment_menu5"
+        android:name="com.seoul.share.ui.fragment.Fragment_menu5"
         android:label="나의정보"
         tools:layout="@layout/fragment_menu5" />
 </navigation>
