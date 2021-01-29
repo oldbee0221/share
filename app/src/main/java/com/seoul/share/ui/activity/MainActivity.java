@@ -1,8 +1,5 @@
 package com.seoul.share.ui.activity;
 
-import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
@@ -11,8 +8,6 @@ import com.seoul.share.databinding.ActivityMainBinding;
 import com.seoul.share.ui.base.BaseActivity;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
-
-    private ActivityMainBinding binding;
 
     @Override
     protected ActivityMainBinding getBinding() {

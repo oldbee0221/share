@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view44"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/textView121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+    <View
+        android:id="@+id/view45"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/textView122"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+    <View
+        android:id="@+id/view46"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/textView123"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+    <View
+        android:id="@+id/view47"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/textView124"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView123" />
+
+    <View
+        android:id="@+id/view48"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/textView125"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView124" />
+
+    <View
+        android:id="@+id/view50"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView125" />
+
+    <View
+        android:id="@+id/view37"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#f2f2f2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goToTheBack" />
+
+    <View
+        android:id="@+id/view38"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/view37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_goToTheBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_32"
+        android:gravity="center"
+        android:lineSpacingExtra="1sp"
+        android:text="설정"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="1.5sp"
+        android:text="계정정보"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view37" />
+
+    <TextView
+        android:id="@+id/textView116"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="0.5sp"
+        android:gravity="center_horizontal"
+        android:text="회원탈퇴"
+        android:background="@drawable/background_stroke_blue"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView115"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView115" />
+
+    <TextView
+        android:id="@+id/textView117"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="0.5sp"
+        android:text="아이디 :"
+        app:layout_constraintStart_toStartOf="@+id/textView115"
+        app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+    <TextView
+        android:id="@+id/textView118"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="0.5sp"
+        android:text="비밀번호 :"
+        app:layout_constraintStart_toStartOf="@+id/textView117"
+        app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#f2f2f2"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/nanum_square_l"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="0.5sp"
+        android:text="skdoiwo"
+        app:layout_constraintBottom_toBottomOf="@+id/textView117"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/textView117" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#f2f2f2"
+        android:inputType="textPassword"
+        android:fontFamily="@font/nanum_square_l"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="0.5sp"
+        android:text="412414"
+        app:layout_constraintBottom_toBottomOf="@+id/textView118"
+        app:layout_constraintEnd_toStartOf="@+id/textView119"
+        app:layout_constraintStart_toEndOf="@+id/textView118"
+        app:layout_constraintTop_toTopOf="@+id/textView118" />
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:lineSpacingExtra="0.5sp"
+        android:gravity="center_horizontal"
+        android:text="수정"
+        android:background="@drawable/backgroundd_solid_blue_round"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/textView116" />
+
+    <View
+        android:id="@+id/view43"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="29dp"
+        android:background="#f2f2f2"
+        app:layout_constraintBottom_toTopOf="@+id/textView120"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="1.5sp"
+        android:text="버전정보 1.1v"
+        app:layout_constraintBottom_toTopOf="@+id/view44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view43" />
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="1.5sp"
+        android:text="오픈소스 라이센스"
+        app:layout_constraintBottom_toTopOf="@+id/view45"
+        app:layout_constraintStart_toStartOf="@+id/textView120"
+        app:layout_constraintTop_toBottomOf="@+id/view44" />
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="1.5sp"
+        android:text="이용약관"
+        app:layout_constraintBottom_toTopOf="@+id/view46"
+        app:layout_constraintStart_toStartOf="@+id/textView120"
+        app:layout_constraintTop_toBottomOf="@+id/view45" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:lineSpacingExtra="1.5sp"
+        android:text="개인정보 취급방침"
+        android:textColor="#516492"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view47"
+        app:layout_constraintStart_toStartOf="@+id/textView120"
+        app:layout_constraintTop_toBottomOf="@+id/view46" />
+
+    <TextView
+        android:id="@+id/textView124"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="1.5sp"
+        android:text="마케팅 수신동의"
+        app:layout_constraintBottom_toTopOf="@+id/view48"
+        app:layout_constraintStart_toStartOf="@+id/textView120"
+        app:layout_constraintTop_toBottomOf="@+id/view47" />
+
+    <TextView
+        android:id="@+id/textView125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="1.5sp"
+        android:text="권한 허용"
+        app:layout_constraintBottom_toTopOf="@+id/view50"
+        app:layout_constraintStart_toStartOf="@+id/textView120"
+        app:layout_constraintTop_toBottomOf="@+id/view48" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_yellow_round"
+        android:fontFamily="@font/nanum_square_r"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:lineSpacingExtra="1sp"
+        android:text="로그아웃"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_versionCheck"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView120"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView120"
+        app:srcCompat="@drawable/seemore_" />
+
+    <ImageView
+        android:id="@+id/iv_openSourceLicense"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView121"
+        app:srcCompat="@drawable/seemore_" />
+
+    <ImageView
+        android:id="@+id/iv_termsOfUse"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView122"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView122"
+        app:srcCompat="@drawable/seemore_" />
+
+    <ImageView
+        android:id="@+id/iv_privacyStatement"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView123"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView123"
+        app:srcCompat="@drawable/seemore_" />
+
+    <ImageView
+        android:id="@+id/iv_marketing"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView124"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView124"
+        app:srcCompat="@drawable/seemore_" />
+
+    <ImageView
+        android:id="@+id/iv_permission"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView125"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView125"
+        app:srcCompat="@drawable/seemore_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

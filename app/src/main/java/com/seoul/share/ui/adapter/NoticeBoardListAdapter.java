@@ -1,6 +1,7 @@
 package com.seoul.share.ui.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.seoul.share.R;
-import com.seoul.share.databinding.ItemItemsApprovedRentalCheckListBinding;
-import com.seoul.share.databinding.ItemItemsRentalItemRentalCheckListBinding;
+import com.seoul.share.databinding.ItemNoticeboardListBinding;
+import com.seoul.share.ui.activity.mypage.NoticeBoardDetailActivity;
 
-public class ItemsApprovedRentalAdapter extends RecyclerView.Adapter<ItemsApprovedRentalAdapter.ViewHolder> {
+
+public class NoticeBoardListAdapter extends RecyclerView.Adapter<NoticeBoardListAdapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -20,8 +22,7 @@ public class ItemsApprovedRentalAdapter extends RecyclerView.Adapter<ItemsApprov
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService
                 (Context.LAYOUT_INFLATER_SERVICE);
 
-        View view = layoutInflater.inflate(R.layout.item_items_approved_rental_check_list
-                , parent, false);
+        View view = layoutInflater.inflate(R.layout.item_noticeboard_list, parent, false);
         return new ViewHolder(view);
     }
 
@@ -32,27 +33,23 @@ public class ItemsApprovedRentalAdapter extends RecyclerView.Adapter<ItemsApprov
 
     @Override
     public int getItemCount() {
-        return 5;
+        return 1;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ItemItemsApprovedRentalCheckListBinding binding;
+        ItemNoticeboardListBinding binding;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            binding = ItemItemsApprovedRentalCheckListBinding.bind(itemView);
-            binding.ivSeeMore.setOnClickListener(new View.OnClickListener() {
+            binding = ItemNoticeboardListBinding.bind(itemView);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (!view.isSelected()) {
-                        view.setSelected(true);
-                        binding.layoutSeeMore.setVisibility(View.VISIBLE);
-                    }else {
-                        view.setSelected(false);
-                        binding.layoutSeeMore.setVisibility(View.GONE);
-                    }
-                    }
+                    view.getContext().startActivity(
+                            new Intent(view.getContext(), NoticeBoardDetailActivity.class)
+                    );
+                }
             });
         }
     }

@@ -10,7 +10,10 @@ import com.seoul.share.ui.activity.mypage.ItemManagementActivity;
 import com.seoul.share.ui.activity.mypage.ItemsApprovedRentalActivity;
 import com.seoul.share.ui.activity.mypage.ItemsRentalActivity;
 import com.seoul.share.ui.activity.NotificationActivity;
+import com.seoul.share.ui.activity.mypage.NoticeBoardActivity;
 import com.seoul.share.ui.activity.mypage.ProfileEditActivity;
+import com.seoul.share.ui.activity.mypage.QuestionActivity;
+import com.seoul.share.ui.activity.mypage.SettingActivity;
 import com.seoul.share.ui.activity.mypage.WishedItemActivity;
 import com.seoul.share.ui.base.BaseFragment;
 
@@ -58,7 +61,6 @@ public class FragmentMenu5 extends BaseFragment<FragmentMenu5Binding> {
             }
         });
 
-
         binding.layoutLikeItems.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,6 +72,28 @@ public class FragmentMenu5 extends BaseFragment<FragmentMenu5Binding> {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), ItemManagementActivity.class));
+            }
+        });
+        binding.ivQuestion.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), QuestionActivity.class));
+            }
+        });
+
+        binding.ivNoticeBoard.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), NoticeBoardActivity.class));
+            }
+        });
+        binding.ivSetting.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), SettingActivity.class));
             }
         });
     }

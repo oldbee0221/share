@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".ui.activity.mypage.SettingActivity"/>
+        <activity android:name=".ui.activity.mypage.NoticeBoardActivity"/>
+        <activity android:name=".ui.activity.mypage.NoticeBoardDetailActivity"/>
         <activity android:name=".ui.activity.mypage.InquiryDetailsActivity"/>
         <activity android:name=".ui.activity.mypage.QuestionActivity"/>
         <activity android:name=".ui.activity.mypage.WishedItemActivity"/>
