@@ -7,7 +7,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.R;
-import com.seoul.share.lib.Preference;
+import com.seoul.share.util.Preference;
 
 public class SplashActivity extends AppCompatActivity {
 

@@ -3,29 +3,22 @@ package com.seoul.share.ui.activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
-import android.os.Bundle;
 import android.text.Html;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.seoul.share.R;
 import com.seoul.share.databinding.ActivityTutorialBinding;
-import com.seoul.share.lib.Preference;
+import com.seoul.share.util.Preference;
 import com.seoul.share.ui.adapter.TutorialViewPagerAdapter;
 import com.seoul.share.ui.base.BaseActivity;
 
 public class TutorialActivity extends BaseActivity<ActivityTutorialBinding> {
 
-    public static Object Context;
     private TutorialViewPagerAdapter pagerAdapter;
     private TextView[] dots;
     private int[] layouts;
