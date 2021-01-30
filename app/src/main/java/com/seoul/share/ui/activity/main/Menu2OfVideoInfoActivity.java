@@ -1,10 +1,7 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.main;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.databinding.ActivityMenu2OfVideoInfoBinding;
 import com.seoul.share.ui.adapter.Menu2Adapter;

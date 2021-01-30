@@ -209,8 +209,6 @@
         android:textSize="12sp"
         android:lineSpacingExtra="0.5sp"
         android:textColor="#000"
-        android:text="51512"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView118"
         app:layout_constraintEnd_toStartOf="@+id/tv_userUpdate"
         app:layout_constraintStart_toEndOf="@+id/textView118"

@@ -1,9 +1,6 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.main;
 
-import android.os.Bundle;
 import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.seoul.share.databinding.ActivityNotificationBinding;
 import com.seoul.share.ui.adapter.NotificationAdapter;

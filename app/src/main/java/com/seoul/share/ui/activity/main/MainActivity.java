@@ -1,4 +1,4 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.main;
 
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;

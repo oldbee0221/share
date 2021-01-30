@@ -34,16 +34,16 @@
         <activity android:name=".ui.activity.mypage.ProfileEditActivity"/>
         <activity android:name=".ui.activity.rental.TownDetailActivity"/>
 
-        <activity android:name=".ui.activity.Menu4OfChatActivity"/>
-        <activity android:name=".ui.activity.Menu3OfItemUploadActivity" />
-        <activity android:name=".ui.activity.Menu2OfVideoInfoActivity" />
+        <activity android:name=".ui.activity.main.Menu4OfChatActivity"/>
+        <activity android:name=".ui.activity.main.Menu3OfItemUploadActivity" />
+        <activity android:name=".ui.activity.main.Menu2OfVideoInfoActivity" />
         <activity android:name=".ui.activity.rental.RentalTownSelectActivity" />
         <activity android:name=".ui.activity.intro.TutorialActivity" />
         <activity android:name=".ui.activity.rental.RentalDecisionCheckActivity" />
         <activity android:name=".ui.activity.rental.RentalDecisionActivity" />
         <activity android:name=".ui.activity.rental.RentalItemDetailActivity" />
 
-        <activity android:name=".ui.activity.NotificationActivity" />
+        <activity android:name=".ui.activity.main.NotificationActivity" />
         <activity android:name=".ui.activity.auth.Completed_pwActivity" />
         <activity android:name=".ui.activity.auth.FInd_pwActivity" />
         <activity android:name=".ui.activity.auth.LoginActivity" />
@@ -54,7 +54,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.MainActivity" />
+        <activity android:name=".ui.activity.main.MainActivity" />
     </application>
 
 </manifest>

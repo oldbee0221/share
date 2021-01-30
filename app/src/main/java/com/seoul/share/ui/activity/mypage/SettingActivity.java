@@ -1,6 +1,8 @@
 package com.seoul.share.ui.activity.mypage;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.provider.Settings;
 import android.view.View;
 
 import com.seoul.share.databinding.ActivitySettingBinding;
@@ -19,13 +21,15 @@ public class SettingActivity extends BaseActivity<ActivitySettingBinding> {
 
     @Override
     protected void setOnCreate() {
+        clickListeners();
+    }
 
-
+    private void clickListeners() {
         binding.tvWithdrawal.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SettingActivity.this,WithdrawalActivity.class));
+                startActivity(new Intent(SettingActivity.this, WithdrawalActivity.class));
             }
         });
         binding.tvUserUpdate.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +82,16 @@ public class SettingActivity extends BaseActivity<ActivitySettingBinding> {
             }
         });
 
+        binding.ivPermission.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                Uri uri = Uri.fromParts("package", getPackageName(), null);
+                intent.setData(uri);
+                startActivity(intent);
+            }
+        });
     }
 
 

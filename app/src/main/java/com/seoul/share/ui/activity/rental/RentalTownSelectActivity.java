@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 
 import com.seoul.share.databinding.ActivityRentalTownSelectBinding;
-import com.seoul.share.ui.activity.MainActivity;
+import com.seoul.share.ui.activity.main.MainActivity;
 import com.seoul.share.ui.adapter.RentalTownSelectAdapter;
 import com.seoul.share.ui.base.BaseActivity;
 

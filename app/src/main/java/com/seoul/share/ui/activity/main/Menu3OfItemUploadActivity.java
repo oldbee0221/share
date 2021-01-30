@@ -1,4 +1,4 @@
-package com.seoul.share.ui.activity;
+package com.seoul.share.ui.activity.main;
 
 import android.content.Intent;
 import android.view.View;

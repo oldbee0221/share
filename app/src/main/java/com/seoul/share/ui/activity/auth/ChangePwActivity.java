@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.seoul.share.databinding.ActivityPwChangeBinding;
-import com.seoul.share.ui.activity.MainActivity;
+import com.seoul.share.ui.activity.main.MainActivity;
 import com.seoul.share.ui.base.BaseActivity;
 
 public class ChangePwActivity extends BaseActivity<ActivityPwChangeBinding> {

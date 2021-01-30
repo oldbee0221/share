@@ -9,7 +9,7 @@ import com.seoul.share.databinding.FragmentMenu5Binding;
 import com.seoul.share.ui.activity.mypage.ItemManagementActivity;
 import com.seoul.share.ui.activity.mypage.ItemsApprovedRentalActivity;
 import com.seoul.share.ui.activity.mypage.ItemsRentalActivity;
-import com.seoul.share.ui.activity.NotificationActivity;
+import com.seoul.share.ui.activity.main.NotificationActivity;
 import com.seoul.share.ui.activity.mypage.NoticeBoardActivity;
 import com.seoul.share.ui.activity.mypage.ProfileEditActivity;
 import com.seoul.share.ui.activity.mypage.QuestionActivity;

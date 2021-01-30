@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.seoul.share.databinding.ActivityRentalDecisionCheckBinding;
-import com.seoul.share.ui.activity.MainActivity;
+import com.seoul.share.ui.activity.main.MainActivity;
 import com.seoul.share.ui.base.BaseActivity;
 
 public class RentalDecisionCheckActivity extends BaseActivity<ActivityRentalDecisionCheckBinding> {

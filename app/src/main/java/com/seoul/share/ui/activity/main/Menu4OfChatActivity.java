@@ -1,8 +1,4 @@
-package com.seoul.share.ui.activity;
-
-import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.seoul.share.ui.activity.main;
 
 import com.seoul.share.databinding.ActivityMenu4OfChatBinding;
 import com.seoul.share.ui.base.BaseActivity;

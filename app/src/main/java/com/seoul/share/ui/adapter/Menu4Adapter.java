@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.seoul.share.R;
-import com.seoul.share.ui.activity.Menu4OfChatActivity;
+import com.seoul.share.ui.activity.main.Menu4OfChatActivity;
 
 public class Menu4Adapter extends RecyclerView.Adapter<Menu4Adapter.ViewHolder> {
     @NonNull
