@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <View
         android:id="@+id/view37"
@@ -25,6 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_goToTheBack"
         android:layout_width="wrap_content"
@@ -34,22 +35,42 @@
         android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"
         android:gravity="center"
         android:lineSpacingExtra="1sp"
-        android:text="공지사항"
+        android:text="타이틀"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_noticeBoardList"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/tv_currentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="0.5sp"
+        android:gravity="center_horizontal"
+        android:hint="제목"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view37" />
+
+    <TextView
+        android:id="@+id/tv_currentDescribe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/nanum_square_r"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="2sp"
+        android:hint="설명"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_goToTheBack"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currentTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

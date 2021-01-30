@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fbfbfb"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="#fbfbfb">
 
 
     <View
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
-        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_32"
+        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"
         android:gravity="center"
         android:lineSpacingExtra="1sp"
         android:text="1:1 문의하기"
@@ -51,11 +51,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/nanum_square_r"
-        android:textStyle="normal"
-        android:textSize="12sp"
-        android:textColor="#000000"
         android:lineSpacingExtra="2sp"
         android:text="서비스와 관련된 문의사항을 입력하여 보내주시면\n운영팀에서 확인 후 신속하게 답변드리도록 하겠습니다."
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view40" />
 
@@ -65,11 +65,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/nanum_square_b"
-        android:textStyle="normal"
-        android:textSize="14sp"
-        android:textColor="#516492"
         android:lineSpacingExtra="1sp"
         android:text="문의제목"
+        android:textColor="#516492"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/textView106"
         app:layout_constraintTop_toBottomOf="@+id/textView106" />
 
@@ -85,19 +85,19 @@
         app:layout_constraintStart_toStartOf="@+id/textView107"
         app:layout_constraintTop_toBottomOf="@+id/textView107">
 
-        <TextView
+        <EditText
             android:id="@+id/textView109"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@null"
             android:fontFamily="@font/nanum_square_r"
-            android:textStyle="normal"
-            android:textSize="12sp"
-            android:textColor="#000000"
             android:lineSpacingExtra="0.5sp"
-            android:text="내마을물품인 뭔가요?"
-
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
+            android:text="내마을물품인 뭔가요?"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -109,13 +109,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/nanum_square_b"
-        android:textStyle="normal"
-        android:textSize="14sp"
-        android:textColor="#516492"
         android:lineSpacingExtra="1sp"
-        tools:text="문의내용"
+        android:textColor="#516492"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/textView107"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+        tools:text="문의내용" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -128,7 +128,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView108"
         app:layout_constraintTop_toBottomOf="@+id/textView108">
 
-        <TextView
+        <EditText
             android:id="@+id/textView110"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -138,6 +138,7 @@
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             android:text="내마을물품이 뭔가요?"
+            android:background="@null"
             android:textColor="#000000"
             android:textSize="12sp"
             android:textStyle="normal"
@@ -155,11 +156,11 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/background_yellow_round"
         android:fontFamily="@font/nanum_square_r"
-        android:textStyle="normal"
-        android:textSize="16sp"
-        android:textColor="#ffffff"
         android:lineSpacingExtra="1sp"
         android:text="보내기"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

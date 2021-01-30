@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".ui.activity.auth.WithdrawalCompleteActivity"/>
+        <activity android:name=".ui.activity.auth.WithdrawalPhoneAuthActivity"/>
+        <activity android:name=".ui.activity.mypage.WithdrawalActivity"/>
+        <activity android:name=".ui.activity.mypage.ReviewTheContractActivity"/>
+        <activity android:name=".ui.activity.mypage.OpenSourceLicenseActivity"/>
+        <activity android:name=".ui.activity.mypage.VersionCheckActivity"/>
+        <activity android:name=".ui.activity.auth.ChangePwActivity"/>
+        <activity android:name=".ui.activity.auth.PhoneAuthActivity"/>
         <activity android:name=".ui.activity.mypage.PersonalInquiryActivity"/>
         <activity android:name=".ui.activity.mypage.SettingActivity"/>
         <activity android:name=".ui.activity.mypage.NoticeBoardActivity"/>

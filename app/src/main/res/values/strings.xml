@@ -30,5 +30,14 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="phone_auth_authNumber_request">인증번호 재전송</string>
+
+    <string name="termsOfUseTitleDescribe">물품공유서비스 이용약관 노출됩니다.물품공유서비스 이용약관 노출됩니다.\n물품공유서비스 이용약관 노출됩니다.물품공유서비스 이용약관 노출됩니다.\n물품공유서비스 이용약관 노출됩니다.물품공유서비스 이용약관 노출됩니다.\n물품공유서비스 이용약관 노출됩니다.\n</string>
+    <string name="privacyStatementDescribe">개인정보 취급방침에 노출됩니다.개인정보 취급방침에 노출됩니다.\n개인정보 취급방침에 노출됩니다.개인정보 취급방침에 노출됩니다.\n개인정보 취급방침에 노출됩니다.개인정보 취급방침에 노출됩니다.\n개인정보 취급방침에 노출됩니다.\n</string>
+    <string name="marketingDescribe">마케팅 수신동의에 노출됩니다.마케팅 수신동의에 노출됩니다.\n마케팅 수신동의에 노출됩니다.마케팅 수신동의에 노출됩니다.\n마케팅 수신동의에 노출됩니다.마케팅 수신동의에 노출됩니다.\n마케팅 수신동의에 노출됩니다.\n</string>
+
+    <string name="termsOfUseTitle">물품공유 서비스 이용약관</string>
+    <string name="privacyStatementTitle">개인정보 취급방침</string>
+    <string name="marketingTitle">마케팅 수신동의</string>
 
 </resources>

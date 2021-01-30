@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
-        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_32"
+        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"
         android:gravity="center"
         android:lineSpacingExtra="1sp"
         android:text="문의하기"

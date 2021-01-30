@@ -6,8 +6,6 @@
     android:background="#fbfbfb"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
     <View
         android:id="@+id/view37"
         android:layout_width="wrap_content"
@@ -27,6 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_goToTheBack"
         android:layout_width="wrap_content"
@@ -36,7 +35,7 @@
         android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"
         android:gravity="center"
         android:lineSpacingExtra="1sp"
-        android:text="문의내역"
+        android:text="버전정보"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="normal"
@@ -44,49 +43,56 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView101"
+        android:id="@+id/textView131"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/nanum_square_b"
         android:textStyle="normal"
-        android:textSize="12sp"
-        android:textColor="#000000"
-        android:lineSpacingExtra="0.5sp"
-        android:text="문의 1건"
-        app:layout_constraintStart_toStartOf="@+id/tv_goToTheBack"
-        app:layout_constraintTop_toBottomOf="@+id/view37" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_inquiryList"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:elevation="4dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/btn_personalInquiry"
+        android:textSize="24sp"
+        android:textColor="#516492"
+        android:lineSpacingExtra="5sp"
+        android:gravity="center_horizontal"
+        tools:text="현재버전 : 1.1V"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView101" />
+        app:layout_constraintTop_toBottomOf="@+id/view37" />
 
-    <Button
-        android:id="@+id/btn_personalInquiry"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textView132"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/background_yellow_round"
-        android:fontFamily="@font/nanum_square_r"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nanum_square_b"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="5sp"
+        android:text="최신버전 : 1.2V"
+        android:textColor="#516492"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textView131"
+        app:layout_constraintStart_toStartOf="@+id/textView131"
+        app:layout_constraintTop_toBottomOf="@+id/textView131" />
+
+    <TextView
+        android:id="@+id/textView133"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nanum_square_b"
         android:textStyle="normal"
         android:textSize="16sp"
-        android:textColor="#ffffff"
+        android:textColor="#516492"
         android:lineSpacingExtra="1sp"
-        android:text="1:1로 문의하기"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal"
+        android:text="버전 업데이트하기"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/background_stroke_blue_round_20"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

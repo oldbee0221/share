@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
-        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_32"
+        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"
         android:gravity="center"
         android:lineSpacingExtra="1sp"
         android:text="설정"
@@ -129,7 +129,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view37" />
 
     <TextView
-        android:id="@+id/textView116"
+        android:id="@+id/tv_withdrawal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -189,6 +189,7 @@
         android:textSize="12sp"
         android:textColor="#000000"
         android:lineSpacingExtra="0.5sp"
+
         android:text="skdoiwo"
         app:layout_constraintBottom_toBottomOf="@+id/textView117"
         app:layout_constraintEnd_toEndOf="parent"
@@ -202,19 +203,21 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#f2f2f2"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:fontFamily="@font/nanum_square_l"
         android:textStyle="normal"
         android:textSize="12sp"
         android:lineSpacingExtra="0.5sp"
-        android:text="123213"
+        android:textColor="#000"
+        android:text="51512"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView118"
-        app:layout_constraintEnd_toStartOf="@+id/textView119"
+        app:layout_constraintEnd_toStartOf="@+id/tv_userUpdate"
         app:layout_constraintStart_toEndOf="@+id/textView118"
         app:layout_constraintTop_toTopOf="@+id/textView118" />
 
     <TextView
-        android:id="@+id/textView119"
+        android:id="@+id/tv_userUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/nanum_square_b"
@@ -230,7 +233,7 @@
         android:paddingTop="6dp"
         android:paddingBottom="6dp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/textView116" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_withdrawal" />
 
     <View
         android:id="@+id/view43"

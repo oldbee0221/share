@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="#fbfbfb"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <View
         android:id="@+id/view37"
         android:layout_width="wrap_content"
@@ -24,96 +25,87 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_goToTheBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
-        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"
         android:gravity="center"
         android:lineSpacingExtra="1sp"
-        android:text="공지사항"
+        android:text="회원 탈퇴"
         android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view37"
-        app:srcCompat="@drawable/inspection_" />
-
-    <TextView
-        android:id="@+id/textView111"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_goToTheMain"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_yellow_round"
         android:fontFamily="@font/nanum_square_r"
-        android:lineSpacingExtra="1.5sp"
-        android:text="정기 점검 안내 드립니다."
-        android:textColor="#000000"
+        android:lineSpacingExtra="1sp"
+        android:text="확인"
+        android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="normal"
-        app:layout_constraintStart_toEndOf="@+id/imageView21"
-        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView112"
+        android:id="@+id/textView116"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/nanum_square_l"
-        android:lineSpacingExtra="1sp"
-        android:text="2020.10.15"
-        android:textColor="#828282"
-        android:textSize="10sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nanum_square_b"
         android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="@+id/textView111"
-        app:layout_constraintTop_toBottomOf="@+id/textView111" />
-
-    <View
-        android:id="@+id/view42"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="18dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="2sp"
+        android:gravity="center_horizontal"
+        android:drawableStart="@drawable/point_"
+        android:text=" 회원탈퇴 신청이 완료되었습니다."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+        app:layout_constraintTop_toTopOf="@+id/view37" />
 
     <TextView
-        android:id="@+id/textView113"
+        android:id="@+id/textView145"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/nanum_square_l"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="3sp"
+        android:gravity="center_horizontal"
+        android:text="(탈퇴 신청 날짜 : 2011-11-09)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+    <TextView
+        android:id="@+id/textView146"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/nanum_square_b"
         android:textStyle="normal"
         android:textSize="14sp"
-        android:textColor="#516492"
-        android:lineSpacingExtra="1sp"
-        android:text="시스템 정기 점검 안내 "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view42" />
-
-    <TextView
-        android:id="@+id/textView114"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/nanum_square_l"
-        android:textStyle="normal"
-        android:textSize="12sp"
         android:textColor="#000000"
-        android:lineSpacingExtra="2sp"
-        android:text="점검 일시 : 2020.10.20 ~ 2020.10.21\n(점검 시간은 당사의 사정에 따라 다소 변동될 수 있습니다.)\n\n시스템 점검 기간동안 서비스 이용이 다소 불편하시더라도 너그러운\n부탁드립니다.\n\n감사합니다."
-        app:layout_constraintStart_toStartOf="@+id/textView113"
-        app:layout_constraintTop_toBottomOf="@+id/textView113" />
+        android:lineSpacingExtra="3sp"
+        android:gravity="center_horizontal"
+        tools:text="14일 이내 재로그인 시\n탈퇴회원복구 절차를 진행 하실 수 있습니다. "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView145" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
